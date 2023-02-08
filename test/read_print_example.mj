@@ -1,0 +1,20 @@
+program ReadPrintExample
+
+int a;char b;bool c;
+int aa[];char bb[];bool cc[];
+const int nula=0,jedan=1,dva=2;
+
+{
+	void main() int q,qq[];char w,ww[];bool e,ee[];
+	{
+		cc=new bool[5];
+		aa=new int[3];
+		aa[nula]=nula;aa[jedan]=jedan;aa[dva]=dva;
+		read(cc[aa[nula]]);
+		print(cc[nula]);
+		read(w);
+		print(w,2);
+		read(q);
+		print(q,5);
+	}
+}

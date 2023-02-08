@@ -1,0 +1,8 @@
+program MainMethodMissing
+		int main;
+	{
+		void not_main()
+		{
+			print(5);
+		}
+	}

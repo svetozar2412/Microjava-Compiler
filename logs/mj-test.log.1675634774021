@@ -1,0 +1,21 @@
+INFO  23:04:59,693 - Kompajliranje src fajla: C:\Users\Svetozar Divljakovic\eclipse-workspace\MJCompiler\src\..\test\fatal_syntax_error.mj
+INFO  23:04:59,716 - #21 program
+INFO  23:04:59,716 - #46 FatalSyntaxError
+INFO  23:04:59,716 - #22 {
+INFO  23:04:59,717 - #41 void
+INFO  23:04:59,717 - #46 main
+INFO  23:04:59,718 - #25 (
+INFO  23:04:59,718 - #26 )
+INFO  23:04:59,718 - #22 {
+INFO  23:04:59,718 - #40 print
+INFO  23:04:59,719 - #25 (
+INFO  23:04:59,719 - #36 ++
+ERROR 23:04:59,719 - 
+Sintaksna greska na liniji 5
+INFO  23:04:59,719 - #36 ++
+INFO  23:04:59,719 - #26 )
+INFO  23:04:59,719 - #24 ;
+INFO  23:04:59,719 - #23 }
+INFO  23:04:59,720 - #23 }
+ERROR 23:04:59,720 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 7
+ERROR 23:04:59,720 - Parsiranje NIJE izvrseno uspesno!

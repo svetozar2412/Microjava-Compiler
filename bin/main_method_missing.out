@@ -1,0 +1,112 @@
+INFO  11:01:25,706 - Kompajliranje src fajla: C:\Users\Svetozar Divljakovic\eclipse-workspace\MJCompiler\src\..\test\main_method_missing.mj
+INFO  11:01:25,741 - #21 program
+INFO  11:01:25,741 - #46 MainMethodMissing
+INFO  11:01:25,741 - #46 int
+INFO  11:01:25,742 - #46 main
+INFO  11:01:25,743 - #24 ;
+INFO  11:01:25,743 - #22 {
+INFO  11:01:25,743 - #41 void
+INFO  11:01:25,744 - #46 not_main
+INFO  11:01:25,744 - #25 (
+INFO  11:01:25,744 - #26 )
+INFO  11:01:25,745 - #22 {
+INFO  11:01:25,745 - #40 print
+INFO  11:01:25,745 - #25 (
+INFO  11:01:25,746 - #43 5
+INFO  11:01:25,746 - #26 )
+INFO  11:01:25,756 - #24 ;
+INFO  11:01:25,756 - #23 }
+INFO  11:01:25,756 - #23 }
+INFO  11:01:25,757 - =================SINTAKSNO STABLO=================
+INFO  11:01:25,758 - Program(
+  ProgName(
+   MainMethodMissing
+  ) [ProgName]
+  DataDeclarations(
+    NoDataDeclarations(
+    ) [NoDataDeclarations]
+    VarDataDecl(
+      VarDeclarations(
+        VarDeclType(
+          Type(
+           int
+          ) [Type]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          ScalarVarDeclaration(
+           main
+          ) [ScalarVarDeclaration]
+        ) [SingleVarDeclaration]
+      ) [VarDeclarations]
+    ) [VarDataDecl]
+  ) [DataDeclarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    VoidMethodDeclarationWithoutLocals(
+      MethodTypeName(
+       not_main
+      ) [MethodTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        PrintStmt(
+          SingleTermExpr(
+            SingleFactorTerm(
+              NumConstFactor(
+               5
+              ) [NumConstFactor]
+            ) [SingleFactorTerm]
+          ) [SingleTermExpr]
+        ) [PrintStmt]
+      ) [Statements]
+    ) [VoidMethodDeclarationWithoutLocals]
+  ) [MethodDeclarations]
+) [Program]
+INFO  11:01:25,758 - =================SEMANTICKA ANALIZA=================
+INFO  11:01:25,762 - Deklarisana skalarna promenljiva main na liniji 2
+INFO  11:01:25,762 - Obradjuje se funkcija not_main na liniji 4
+ERROR 11:01:25,762 - Greska : Program ne sadrzi main funkciju.
+INFO  11:01:25,762 - =================SINTAKSNA ANALIZA=================
+INFO  11:01:25,762 - 1	methods in program
+INFO  11:01:25,762 - 1	global variables
+INFO  11:01:25,762 - 0	global constants
+INFO  11:01:25,762 - 0	global arrays
+INFO  11:01:25,762 - 0	local variables in main
+INFO  11:01:25,763 - 0	statements in main
+=====================TABELA SIMBOLA=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: bool, -1, -1 
+Meth printBoolObj: notype, 0, 1 
+   Var boolValue: bool, 0, 1 
+   Var width: int, 1, 1 
+   Var empty: int, 2, 1 
+   Var length: int, 3, 1 
+
+Meth readBoolObj: bool, 0, 1 
+   Var inp: Arr of char, 0, 1 
+   Var i: int, 1, 1 
+   Var skip: char, 2, 1 
+   Var result: bool, 3, 1 
+
+Prog MainMethodMissing: notype, 0, 1 
+   Var main: int, 0, 0 
+   Meth not_main: notype, 0, 0 
+
+
+
+ERROR 11:01:25,763 - Semanticka analiza NIJE uspesna!

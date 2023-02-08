@@ -1,0 +1,10 @@
+program LexError
+	int promenljiva;
+	bool temp++,tmp,tp=;
+	{
+		void main()
+		{
+			promenljiva=promenljiva***promenljiva;
+			print(5);
+		}
+	}

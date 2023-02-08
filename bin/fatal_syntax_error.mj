@@ -1,0 +1,7 @@
+program FatalSyntaxError
+	{
+		void main()
+		{
+			print(++++);
+		}
+	}

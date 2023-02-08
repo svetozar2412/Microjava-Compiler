@@ -1,0 +1,64 @@
+ program MJProgram
+	int x; int x[],y[];
+	int z;
+	bool q,w[];
+	bool e;
+	char o,p[];
+	Object obj;
+	//neispravne konstante
+	const int klkl = false,lklk='a';
+	const char znak1 = true;
+	const bool prpr=1,rprp='a';
+	//ispravne konstante
+	const int klkl_correct = 8,lklk_correct=18;
+	const char znak1_correct = 'z';
+	const bool prpr_correct=true,rprp_correct=false;
+{
+	void main(int local_int,char local_char,bool local_bool) 
+	{
+		print(xyz);
+		print(y);
+		
+		prpr_correct=znak1_correct;
+		
+		klkl_correct++;
+		y--;
+		
+		[,lklk_correct,,obj,y,znak1_correct,,z]=y;
+		[,y[0],,y[1],y[2],znak1_correct,,z]=z;
+		
+		read(z);
+		read(y);
+		read(klkl_correct);
+		read(obj);
+		
+		x=x[local_bool];
+		y=new char[true];
+		x=z*local_char;
+		x=-local_bool;
+		x=prpr_correct+rprp_correct;
+		
+		y[1]++;
+		x++;
+		x = ( y[1] + 5 ) * x ;
+		
+		print(klkl_correct);
+	}
+	
+	void getChar(int g,char h,bool b)
+	int k,z,po[];bool u,i[];char ch[];
+	{
+		[]=i;
+		[k,po[31],z,x,y[26]]=po;
+		x--;
+		k--;
+		y[5]--;
+		po[10]--;
+		print(-x*(y[7]+k/po[13]));
+		po=new int[19];
+		ch=new char[17];
+		po[34]=61;
+		ch[87]='h';
+		ch[0]=eol;
+	}
+}

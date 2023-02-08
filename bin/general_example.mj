@@ -1,0 +1,60 @@
+program GeneralExample
+int q,w[];
+const int e=5;
+char a,s[];
+const char b='l';
+bool z,x[];
+const bool c=true;
+{
+	void main()
+	int local_int;char local_char;bool local_bool;
+	{
+		read(local_int); //local_int=5
+		local_int=local_int*e;
+		print(local_int);
+		
+		local_char='h';
+		local_bool=false;
+		
+		local_int++;
+		local_int--;
+		w=new int[3];
+		s=new char[e-2]; // size=3
+		x=new bool[e+0*local_int]; //size=5
+		w[1-1]=(local_int%e)*17/5+9; //w[0]=9
+		w[e/e]=-(w[0*local_int]%(e-1)%2); //w[1]=-1
+		w[2*(local_int/local_int*1+1-1)]=-(-(w[0]*w[(w[1]+1-1)/(w[1]+18)])); //w[2]=81
+		print(w[0]);
+		print(w[1]);
+		print(w[2]);
+		[q,,w[0]]=w;
+		print(q); //q=9
+		print(w[0]); //w[0]=81
+		s[e-e]=eol;
+		s[-e+1+e]=' ';
+		s[e/e+1]='p';
+		[,,a]=s;
+		print(a); //a=p
+		x[e%e]=true;
+		x[(e+1)%e]=c;
+		x[2*(-e+e-e%e)]=false;
+		x[3*1]=true;
+		x[4]=false;
+		[local_bool,z,,z,x[0]]=x;
+		print(local_bool); //local_bool=true
+		print(z);	//z=true
+		print(x[0]); //x[0]=false;
+	}
+	
+	void no_locals(int a,int a_array[],char c,char c_array[],bool b,bool b_array[])
+	{
+		print(a);
+		print(b);
+		print(c);
+	}
+	
+	void no_locals_no_params()
+	{
+		print(e);
+	}
+}

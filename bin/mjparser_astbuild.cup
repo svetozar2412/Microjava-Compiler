@@ -1,0 +1,264 @@
+
+
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+	boolean errorDetected = false;
+
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	errorDetected=true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+
+:}
+
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+terminal BREAK,CLASS,ELSE,IF,WHILE,RETURN,EXTENDS,CONTINUE,FOREACH,EQUAL,NOT_EQUAL;
+terminal GREATER_THAN,GREATER_THAN_OR_EQUAL,LESS_THAN,LESS_THAN_OR_EQUAL,AND,OR,COLON,LAMBDA;
+
+terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, LSQUARE, RSQUARE, ASSIGN, PLUS, MINUS, MUL, DIV, MOD, DEC, INC, NEW, COMMA, READ, PRINT, VOID, CONST;
+terminal Integer NUM_CONST;
+terminal Character CHAR_CONST;
+terminal String BOOL_CONST;
+terminal String IDENT;
+
+nonterminal DataDeclList DataDeclList;
+nonterminal MethodDeclList MethodDeclList;
+nonterminal DataDecl DataDecl;
+nonterminal VarDecl VarDecl;
+nonterminal VarDeclType VarDeclType;
+nonterminal ConstDecl ConstDecl;
+nonterminal ConstDeclType ConstDeclType;
+nonterminal VarDeclList VarDeclList;
+nonterminal ConstDeclList ConstDeclList;
+nonterminal SingleVarDecl SingleVarDecl;
+nonterminal SingleConstDecl SingleConstDecl;
+nonterminal FormPars FormPars;
+nonterminal StatementList StatementList;
+nonterminal LocalVarDeclarationList LocalVarDeclarationList;
+nonterminal FormalParamList FormalParamList;
+nonterminal FormalParamDecl FormalParamDecl;
+nonterminal Statement Statement;
+nonterminal DesignatorAssignmentStatement DesignatorAssignmentStatement;
+nonterminal DesignatorStatement DesignatorStatement;
+nonterminal DesignatorList DesignatorList;
+nonterminal OptionalDesignator OptionalDesignator;
+nonterminal ArrayName ArrayName;
+nonterminal Addop Addop;
+nonterminal Mulop Mulop;
+nonterminal ExprAssignmentError ExprAssignmentError;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, MethodDecl, MethodTypeName,Designator;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Factor, Expr;
+
+start with Program;
+
+Program ::= (Program) PROG ProgName:p DataDeclList:D1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(p, D1, M2); RESULT.setLine(pleft); :};
+
+ProgName ::= (ProgName) IDENT:progName {: RESULT=new ProgName(progName); RESULT.setLine(progNameleft); :};
+
+DataDeclList ::= (DataDeclarations) DataDeclList:D1 DataDecl:D2 {: RESULT=new DataDeclarations(D1, D2); RESULT.setLine(D1left); :}
+			|
+			(NoDataDeclarations) {: RESULT=new NoDataDeclarations(); :} /* epsilon */
+			;
+			
+DataDecl ::= (ConstDataDecl) ConstDecl:C1 {: RESULT=new ConstDataDecl(C1); RESULT.setLine(C1left); :}
+			|
+			(VarDataDecl) VarDecl:V1 {: RESULT=new VarDataDecl(V1); RESULT.setLine(V1left); :}
+			;
+			
+ConstDecl ::= (ConstDeclarations) CONST ConstDeclType:C1 ConstDeclList:C2 SEMI {: RESULT=new ConstDeclarations(C1, C2); RESULT.setLine(C1left); :};
+
+ConstDeclType ::= (ConstDeclType) Type:typeName {: RESULT=new ConstDeclType(typeName); RESULT.setLine(typeNameleft); :};
+			
+VarDecl ::= (VarDeclarations) VarDeclType:V1 VarDeclList:V2 SEMI {: RESULT=new VarDeclarations(V1, V2); RESULT.setLine(V1left); :}
+			|
+			(ErrorVarDeclarations) error:e SEMI {: parser.log.debug("Izvrsen oporavak pri deklaraciji promenljive u liniji " + eleft, null);  :} {: RESULT=new ErrorVarDeclarations(); :}
+			;
+
+VarDeclType ::= (VarDeclType) Type:typeName {: RESULT=new VarDeclType(typeName); RESULT.setLine(typeNameleft); :};
+			
+VarDeclList ::= (MultipleVarDeclarations) SingleVarDecl:S1 COMMA VarDeclList:V2 {: RESULT=new MultipleVarDeclarations(S1, V2); RESULT.setLine(S1left); :}
+			|
+			(SingleVarDeclaration) SingleVarDecl:S1 {: RESULT=new SingleVarDeclaration(S1); RESULT.setLine(S1left); :}
+			;
+
+SingleVarDecl ::= (ScalarVarDeclaration) IDENT:varName {: RESULT=new ScalarVarDeclaration(varName); RESULT.setLine(varNameleft); :}
+			|
+			(ArrayVarDeclaration) IDENT:varName LSQUARE RSQUARE {: RESULT=new ArrayVarDeclaration(varName); RESULT.setLine(varNameleft); :}
+			|
+			(VarDeclarationError) error:e {: parser.log.debug("Izvrsen oporavak pri deklaraciji promenljive u liniji " + eleft, null);  :} {: RESULT=new VarDeclarationError(); :}
+			;
+			
+ConstDeclList ::= (MultipleConstDeclarations) ConstDeclList:C1 COMMA SingleConstDecl:S2 {: RESULT=new MultipleConstDeclarations(C1, S2); RESULT.setLine(C1left); :}
+				|
+				(SingleConstDeclaration) SingleConstDecl:S1 {: RESULT=new SingleConstDeclaration(S1); RESULT.setLine(S1left); :}
+				;
+
+SingleConstDecl ::= (NumConstDeclaration) IDENT:constName ASSIGN NUM_CONST:numValue {: RESULT=new NumConstDeclaration(constName, numValue); RESULT.setLine(constNameleft); :}
+			|
+			(CharConstDeclaration) IDENT:constName ASSIGN CHAR_CONST:charValue {: RESULT=new CharConstDeclaration(constName, charValue); RESULT.setLine(constNameleft); :}
+			|
+			(BoolConstDeclaration) IDENT:constName ASSIGN BOOL_CONST:boolValue {: RESULT=new BoolConstDeclaration(constName, boolValue); RESULT.setLine(constNameleft); :}
+			;
+
+Type ::= (Type) IDENT:typeName {: RESULT=new Type(typeName); RESULT.setLine(typeNameleft); :};
+
+MethodDeclList ::= (MethodDeclarations) MethodDeclList:M1 MethodDecl:M2 {: RESULT=new MethodDeclarations(M1, M2); RESULT.setLine(M1left); :}
+				|
+				(NoMethodDeclarations) {: RESULT=new NoMethodDeclarations(); :} /* epsilon */
+				;
+				
+MethodDecl ::= /* (NotVoidMethodDeclaration) Type:typeName IDENT:methodName LPAREN FormPars RPAREN LocalVarDeclarationList LBRACE StatementList RBRACE
+			|
+			(NotVoidMethodDeclarationWithoutLocals) Type:typeName IDENT:methodName LPAREN FormPars RPAREN LBRACE StatementList RBRACE
+			| */
+			(VoidMethodDeclaration) MethodTypeName:M1 LPAREN FormPars:F2 RPAREN LocalVarDeclarationList:L3 LBRACE StatementList:S4 RBRACE {: RESULT=new VoidMethodDeclaration(M1, F2, L3, S4); RESULT.setLine(M1left); :}
+			|
+			(VoidMethodDeclarationWithoutLocals) MethodTypeName:M1 LPAREN FormPars:F2 RPAREN LBRACE StatementList:S3 RBRACE {: RESULT=new VoidMethodDeclarationWithoutLocals(M1, F2, S3); RESULT.setLine(M1left); :}
+			;
+			
+MethodTypeName ::= (MethodTypeName) VOID IDENT:methodName {: RESULT=new MethodTypeName(methodName); RESULT.setLine(methodNameleft); :};
+			
+LocalVarDeclarationList ::= (MultipleLocals) LocalVarDeclarationList:L1 VarDecl:V2 {: RESULT=new MultipleLocals(L1, V2); RESULT.setLine(L1left); :}
+						|
+						(SingleLocal) VarDecl:V1 {: RESULT=new SingleLocal(V1); RESULT.setLine(V1left); :}
+						;
+
+FormPars ::= (FormParams) FormalParamList:F1 {: RESULT=new FormParams(F1); RESULT.setLine(F1left); :}
+		  |
+		  (NoFormParam) {: RESULT=new NoFormParam(); :} /* epsilon */
+		  ;
+		  
+FormalParamList ::= (FormalParamDecls) FormalParamList:F1 COMMA FormalParamDecl:F2 {: RESULT=new FormalParamDecls(F1, F2); RESULT.setLine(F1left); :}
+				|
+				(SingleFormalParamDecl) FormalParamDecl:F1 {: RESULT=new SingleFormalParamDecl(F1); RESULT.setLine(F1left); :}
+				;
+				
+FormalParamDecl ::= (ScalarFormalParamDecl) Type:typeName IDENT:varName {: RESULT=new ScalarFormalParamDecl(typeName, varName); RESULT.setLine(typeNameleft); :}
+				|
+				(ArrayFormalParamDecl) Type:typeName IDENT:varName LSQUARE RSQUARE {: RESULT=new ArrayFormalParamDecl(typeName, varName); RESULT.setLine(typeNameleft); :}
+				;
+
+StatementList ::= (Statements) StatementList:S1 Statement:S2 {: RESULT=new Statements(S1, S2); RESULT.setLine(S1left); :}
+				|
+				(NoStatements) {: RESULT=new NoStatements(); :} /* epsilon */
+				;
+				
+Statement ::= (DesignatorStmt) DesignatorStatement:D1 SEMI {: RESULT=new DesignatorStmt(D1); RESULT.setLine(D1left); :}
+		   |
+		   (PrintStmt) PRINT LPAREN Expr:E1 RPAREN SEMI {: RESULT=new PrintStmt(E1); RESULT.setLine(E1left); :}
+		   |
+		   (ExtendedPrintStmt) PRINT LPAREN Expr:E1 COMMA NUM_CONST:numValue RPAREN SEMI {: RESULT=new ExtendedPrintStmt(E1, numValue); RESULT.setLine(E1left); :}
+		   |
+		   (ReadStmt) READ LPAREN Designator:D1 RPAREN SEMI {: RESULT=new ReadStmt(D1); RESULT.setLine(D1left); :}
+		   ;
+		   
+DesignatorStatement ::= (DesignatorAssignmentStmt) DesignatorAssignmentStatement:D1 {: RESULT=new DesignatorAssignmentStmt(D1); RESULT.setLine(D1left); :}
+		   |
+		   (DecDesignatorStmt) Designator:D1 DEC {: RESULT=new DecDesignatorStmt(D1); RESULT.setLine(D1left); :}
+		   |
+		   (IncDesignatorStmt) Designator:D1 INC {: RESULT=new IncDesignatorStmt(D1); RESULT.setLine(D1left); :}
+		   |
+		   (DesignatorAssignmentWithSquareBrackets) LSQUARE DesignatorList:D1 RSQUARE ASSIGN Designator:D2 {: RESULT=new DesignatorAssignmentWithSquareBrackets(D1, D2); RESULT.setLine(D1left); :}
+		   ;
+		   
+DesignatorAssignmentStatement ::= (DesignatorAssignment) Designator:D1 ASSIGN Expr:E2 {: RESULT=new DesignatorAssignment(D1, E2); RESULT.setLine(D1left); :}
+								|
+								(DesignatorAssignmentError) Designator:D1 ASSIGN:a ExprAssignmentError:E2 {: RESULT=new DesignatorAssignmentError(D1, E2); RESULT.setLine(D1left); :}
+								;
+								
+ExprAssignmentError ::= (ExprAssignmentError) error:e	{: parser.log.debug("Izvrsen oporavak od greske pri dodeli vrednosti do ; u liniji " + eleft, null);  :} {: RESULT=new ExprAssignmentError(); :};
+
+DesignatorList ::= (MultipleOptionalDesignators) DesignatorList:D1 COMMA OptionalDesignator:O2 {: RESULT=new MultipleOptionalDesignators(D1, O2); RESULT.setLine(D1left); :}
+				|
+				(SingleOptionalDesignator) OptionalDesignator:O1 {: RESULT=new SingleOptionalDesignator(O1); RESULT.setLine(O1left); :}
+				;
+				
+OptionalDesignator ::= (NotEmptyOptionalDesignator) Designator:D1 {: RESULT=new NotEmptyOptionalDesignator(D1); RESULT.setLine(D1left); :}
+				|
+				(EmptyOptionalDesignator) {: RESULT=new EmptyOptionalDesignator(); :} /* epsilon */
+				;
+	 
+Expr ::= (MultipleTermExpr) Expr:E1 Addop:A2 Term:T3 {: RESULT=new MultipleTermExpr(E1, A2, T3); RESULT.setLine(E1left); :}
+			|
+			(SingleTermExpr) Term:T1 {: RESULT=new SingleTermExpr(T1); RESULT.setLine(T1left); :}
+			|
+			(NegSingleTermExpr) MINUS Term:T1 {: RESULT=new NegSingleTermExpr(T1); RESULT.setLine(T1left); :}
+			;
+
+Term ::= (MultipleFactorTerm) Term:T1 Mulop:M2 Factor:F3 {: RESULT=new MultipleFactorTerm(T1, M2, F3); RESULT.setLine(T1left); :}
+		|
+		(SingleFactorTerm) Factor:F1 {: RESULT=new SingleFactorTerm(F1); RESULT.setLine(F1left); :}
+		;
+
+Factor ::= (NumConstFactor) NUM_CONST:numValue {: RESULT=new NumConstFactor(numValue); RESULT.setLine(numValueleft); :}
+		|
+		(CharConstFactor) CHAR_CONST:charValue {: RESULT=new CharConstFactor(charValue); RESULT.setLine(charValueleft); :}
+		|
+		(BoolConstFactor) BOOL_CONST:boolValue {: RESULT=new BoolConstFactor(boolValue); RESULT.setLine(boolValueleft); :}
+		|
+		(ExprFactor) LPAREN Expr:E1 RPAREN {: RESULT=new ExprFactor(E1); RESULT.setLine(E1left); :}
+		|
+		(NewArrayFactor) NEW Type:typeName LSQUARE Expr:E1 RSQUARE {: RESULT=new NewArrayFactor(typeName, E1); RESULT.setLine(typeNameleft); :}
+		|
+		(DesignatorFactor) Designator:D1 {: RESULT=new DesignatorFactor(D1); RESULT.setLine(D1left); :}
+		;
+				
+Designator ::= (ScalarDesignator) IDENT:varName {: RESULT=new ScalarDesignator(varName); RESULT.setLine(varNameleft); :}
+			|
+			(ArrayDesignator) ArrayName:A1 LSQUARE Expr:expr RSQUARE {: RESULT=new ArrayDesignator(A1, expr); RESULT.setLine(A1left); :}
+			;
+			
+ArrayName ::= (ArrayName) IDENT:varName {: RESULT=new ArrayName(varName); RESULT.setLine(varNameleft); :};
+
+Addop ::= (Add) PLUS {: RESULT=new Add(); :}
+		|
+		(Sub) MINUS {: RESULT=new Sub(); :}
+		;
+
+Mulop ::= (Mul) MUL {: RESULT=new Mul(); :}
+		|
+		(Div) DIV {: RESULT=new Div(); :}
+		|
+		(Mod) MOD {: RESULT=new Mod(); :}
+		;
+		
+
+
+
+			

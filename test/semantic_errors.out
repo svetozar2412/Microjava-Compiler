@@ -1,0 +1,1743 @@
+INFO  11:01:26,368 - Kompajliranje src fajla: C:\Users\Svetozar Divljakovic\eclipse-workspace\MJCompiler\src\..\test\semantic_errors.mj
+INFO  11:01:26,401 - #21 program
+INFO  11:01:26,401 - #46 MJProgram
+INFO  11:01:26,401 - #46 int
+INFO  11:01:26,402 - #46 x
+INFO  11:01:26,403 - #24 ;
+INFO  11:01:26,403 - #46 int
+INFO  11:01:26,403 - #46 x
+INFO  11:01:26,403 - #27 [
+INFO  11:01:26,404 - #28 ]
+INFO  11:01:26,404 - #38 ,
+INFO  11:01:26,404 - #46 y
+INFO  11:01:26,404 - #27 [
+INFO  11:01:26,404 - #28 ]
+INFO  11:01:26,404 - #24 ;
+INFO  11:01:26,404 - #46 int
+INFO  11:01:26,404 - #46 z
+INFO  11:01:26,405 - #24 ;
+INFO  11:01:26,405 - #46 bool
+INFO  11:01:26,405 - #46 q
+INFO  11:01:26,405 - #38 ,
+INFO  11:01:26,405 - #46 w
+INFO  11:01:26,405 - #27 [
+INFO  11:01:26,405 - #28 ]
+INFO  11:01:26,405 - #24 ;
+INFO  11:01:26,405 - #46 bool
+INFO  11:01:26,406 - #46 e
+INFO  11:01:26,406 - #24 ;
+INFO  11:01:26,406 - #46 char
+INFO  11:01:26,406 - #46 o
+INFO  11:01:26,406 - #38 ,
+INFO  11:01:26,406 - #46 p
+INFO  11:01:26,406 - #27 [
+INFO  11:01:26,406 - #28 ]
+INFO  11:01:26,406 - #24 ;
+INFO  11:01:26,406 - #46 Object
+INFO  11:01:26,406 - #46 obj
+INFO  11:01:26,406 - #24 ;
+INFO  11:01:26,406 - #42 const
+INFO  11:01:26,406 - #46 int
+INFO  11:01:26,407 - #46 klkl
+INFO  11:01:26,407 - #29 =
+INFO  11:01:26,407 - #45 false
+INFO  11:01:26,407 - #38 ,
+INFO  11:01:26,407 - #46 lklk
+INFO  11:01:26,408 - #29 =
+INFO  11:01:26,408 - #44 a
+INFO  11:01:26,408 - #24 ;
+INFO  11:01:26,408 - #42 const
+INFO  11:01:26,408 - #46 char
+INFO  11:01:26,408 - #46 znak1
+INFO  11:01:26,408 - #29 =
+INFO  11:01:26,408 - #45 true
+INFO  11:01:26,408 - #24 ;
+INFO  11:01:26,408 - #42 const
+INFO  11:01:26,409 - #46 bool
+INFO  11:01:26,409 - #46 prpr
+INFO  11:01:26,409 - #29 =
+INFO  11:01:26,409 - #43 1
+INFO  11:01:26,409 - #38 ,
+INFO  11:01:26,409 - #46 rprp
+INFO  11:01:26,409 - #29 =
+INFO  11:01:26,409 - #44 a
+INFO  11:01:26,409 - #24 ;
+INFO  11:01:26,409 - #42 const
+INFO  11:01:26,409 - #46 int
+INFO  11:01:26,409 - #46 klkl_correct
+INFO  11:01:26,409 - #29 =
+INFO  11:01:26,409 - #43 8
+INFO  11:01:26,409 - #38 ,
+INFO  11:01:26,409 - #46 lklk_correct
+INFO  11:01:26,409 - #29 =
+INFO  11:01:26,409 - #43 18
+INFO  11:01:26,410 - #24 ;
+INFO  11:01:26,410 - #42 const
+INFO  11:01:26,410 - #46 char
+INFO  11:01:26,410 - #46 znak1_correct
+INFO  11:01:26,410 - #29 =
+INFO  11:01:26,410 - #44 z
+INFO  11:01:26,410 - #24 ;
+INFO  11:01:26,410 - #42 const
+INFO  11:01:26,410 - #46 bool
+INFO  11:01:26,410 - #46 prpr_correct
+INFO  11:01:26,410 - #29 =
+INFO  11:01:26,410 - #45 true
+INFO  11:01:26,410 - #38 ,
+INFO  11:01:26,410 - #46 rprp_correct
+INFO  11:01:26,410 - #29 =
+INFO  11:01:26,410 - #45 false
+INFO  11:01:26,410 - #24 ;
+INFO  11:01:26,410 - #22 {
+INFO  11:01:26,410 - #41 void
+INFO  11:01:26,411 - #46 main
+INFO  11:01:26,411 - #25 (
+INFO  11:01:26,411 - #46 int
+INFO  11:01:26,411 - #46 local_int
+INFO  11:01:26,412 - #38 ,
+INFO  11:01:26,412 - #46 char
+INFO  11:01:26,412 - #46 local_char
+INFO  11:01:26,412 - #38 ,
+INFO  11:01:26,412 - #46 bool
+INFO  11:01:26,412 - #46 local_bool
+INFO  11:01:26,412 - #26 )
+INFO  11:01:26,412 - #22 {
+INFO  11:01:26,412 - #40 print
+INFO  11:01:26,413 - #25 (
+INFO  11:01:26,413 - #46 xyz
+INFO  11:01:26,413 - #26 )
+INFO  11:01:26,413 - #24 ;
+INFO  11:01:26,413 - #40 print
+INFO  11:01:26,414 - #25 (
+INFO  11:01:26,414 - #46 y
+INFO  11:01:26,414 - #26 )
+INFO  11:01:26,414 - #24 ;
+INFO  11:01:26,414 - #46 prpr_correct
+INFO  11:01:26,414 - #29 =
+INFO  11:01:26,414 - #46 znak1_correct
+INFO  11:01:26,414 - #24 ;
+INFO  11:01:26,414 - #46 klkl_correct
+INFO  11:01:26,414 - #36 ++
+INFO  11:01:26,414 - #24 ;
+INFO  11:01:26,415 - #46 y
+INFO  11:01:26,415 - #35 --
+INFO  11:01:26,415 - #24 ;
+INFO  11:01:26,415 - #27 [
+INFO  11:01:26,415 - #38 ,
+INFO  11:01:26,415 - #46 lklk_correct
+INFO  11:01:26,415 - #38 ,
+INFO  11:01:26,416 - #38 ,
+INFO  11:01:26,416 - #46 obj
+INFO  11:01:26,416 - #38 ,
+INFO  11:01:26,416 - #46 y
+INFO  11:01:26,416 - #38 ,
+INFO  11:01:26,416 - #46 znak1_correct
+INFO  11:01:26,416 - #38 ,
+INFO  11:01:26,416 - #38 ,
+INFO  11:01:26,416 - #46 z
+INFO  11:01:26,416 - #28 ]
+INFO  11:01:26,416 - #29 =
+INFO  11:01:26,416 - #46 y
+INFO  11:01:26,416 - #24 ;
+INFO  11:01:26,416 - #27 [
+INFO  11:01:26,417 - #38 ,
+INFO  11:01:26,417 - #46 y
+INFO  11:01:26,417 - #27 [
+INFO  11:01:26,417 - #43 0
+INFO  11:01:26,417 - #28 ]
+INFO  11:01:26,417 - #38 ,
+INFO  11:01:26,417 - #38 ,
+INFO  11:01:26,417 - #46 y
+INFO  11:01:26,417 - #27 [
+INFO  11:01:26,418 - #43 1
+INFO  11:01:26,418 - #28 ]
+INFO  11:01:26,418 - #38 ,
+INFO  11:01:26,418 - #46 y
+INFO  11:01:26,418 - #27 [
+INFO  11:01:26,418 - #43 2
+INFO  11:01:26,418 - #28 ]
+INFO  11:01:26,418 - #38 ,
+INFO  11:01:26,418 - #46 znak1_correct
+INFO  11:01:26,418 - #38 ,
+INFO  11:01:26,418 - #38 ,
+INFO  11:01:26,418 - #46 z
+INFO  11:01:26,418 - #28 ]
+INFO  11:01:26,418 - #29 =
+INFO  11:01:26,418 - #46 z
+INFO  11:01:26,418 - #24 ;
+INFO  11:01:26,418 - #39 read
+INFO  11:01:26,418 - #25 (
+INFO  11:01:26,418 - #46 z
+INFO  11:01:26,418 - #26 )
+INFO  11:01:26,418 - #24 ;
+INFO  11:01:26,419 - #39 read
+INFO  11:01:26,419 - #25 (
+INFO  11:01:26,419 - #46 y
+INFO  11:01:26,419 - #26 )
+INFO  11:01:26,419 - #24 ;
+INFO  11:01:26,419 - #39 read
+INFO  11:01:26,419 - #25 (
+INFO  11:01:26,419 - #46 klkl_correct
+INFO  11:01:26,419 - #26 )
+INFO  11:01:26,419 - #24 ;
+INFO  11:01:26,419 - #39 read
+INFO  11:01:26,419 - #25 (
+INFO  11:01:26,419 - #46 obj
+INFO  11:01:26,419 - #26 )
+INFO  11:01:26,419 - #24 ;
+INFO  11:01:26,419 - #46 x
+INFO  11:01:26,419 - #29 =
+INFO  11:01:26,420 - #46 x
+INFO  11:01:26,420 - #27 [
+INFO  11:01:26,420 - #46 local_bool
+INFO  11:01:26,420 - #28 ]
+INFO  11:01:26,420 - #24 ;
+INFO  11:01:26,420 - #46 y
+INFO  11:01:26,420 - #29 =
+INFO  11:01:26,420 - #37 new
+INFO  11:01:26,420 - #46 char
+INFO  11:01:26,420 - #27 [
+INFO  11:01:26,420 - #45 true
+INFO  11:01:26,420 - #28 ]
+INFO  11:01:26,420 - #24 ;
+INFO  11:01:26,421 - #46 x
+INFO  11:01:26,421 - #29 =
+INFO  11:01:26,421 - #46 z
+INFO  11:01:26,421 - #32 *
+INFO  11:01:26,421 - #46 local_char
+INFO  11:01:26,422 - #24 ;
+INFO  11:01:26,422 - #46 x
+INFO  11:01:26,422 - #29 =
+INFO  11:01:26,423 - #31 -
+INFO  11:01:26,423 - #46 local_bool
+INFO  11:01:26,423 - #24 ;
+INFO  11:01:26,423 - #46 x
+INFO  11:01:26,423 - #29 =
+INFO  11:01:26,423 - #46 prpr_correct
+INFO  11:01:26,423 - #30 +
+INFO  11:01:26,423 - #46 rprp_correct
+INFO  11:01:26,424 - #24 ;
+INFO  11:01:26,424 - #46 y
+INFO  11:01:26,424 - #27 [
+INFO  11:01:26,424 - #43 1
+INFO  11:01:26,424 - #28 ]
+INFO  11:01:26,424 - #36 ++
+INFO  11:01:26,424 - #24 ;
+INFO  11:01:26,424 - #46 x
+INFO  11:01:26,424 - #36 ++
+INFO  11:01:26,424 - #24 ;
+INFO  11:01:26,424 - #46 x
+INFO  11:01:26,424 - #29 =
+INFO  11:01:26,424 - #25 (
+INFO  11:01:26,424 - #46 y
+INFO  11:01:26,424 - #27 [
+INFO  11:01:26,424 - #43 1
+INFO  11:01:26,424 - #28 ]
+INFO  11:01:26,424 - #30 +
+INFO  11:01:26,424 - #43 5
+INFO  11:01:26,425 - #26 )
+INFO  11:01:26,425 - #32 *
+INFO  11:01:26,425 - #46 x
+INFO  11:01:26,425 - #24 ;
+INFO  11:01:26,425 - #40 print
+INFO  11:01:26,425 - #25 (
+INFO  11:01:26,425 - #46 klkl_correct
+INFO  11:01:26,425 - #26 )
+INFO  11:01:26,425 - #24 ;
+INFO  11:01:26,425 - #23 }
+INFO  11:01:26,425 - #41 void
+INFO  11:01:26,425 - #46 getChar
+INFO  11:01:26,425 - #25 (
+INFO  11:01:26,425 - #46 int
+INFO  11:01:26,425 - #46 g
+INFO  11:01:26,425 - #38 ,
+INFO  11:01:26,425 - #46 char
+INFO  11:01:26,425 - #46 h
+INFO  11:01:26,425 - #38 ,
+INFO  11:01:26,426 - #46 bool
+INFO  11:01:26,426 - #46 b
+INFO  11:01:26,426 - #26 )
+INFO  11:01:26,426 - #46 int
+INFO  11:01:26,426 - #46 k
+INFO  11:01:26,426 - #38 ,
+INFO  11:01:26,426 - #46 z
+INFO  11:01:26,426 - #38 ,
+INFO  11:01:26,426 - #46 po
+INFO  11:01:26,426 - #27 [
+INFO  11:01:26,426 - #28 ]
+INFO  11:01:26,426 - #24 ;
+INFO  11:01:26,426 - #46 bool
+INFO  11:01:26,426 - #46 u
+INFO  11:01:26,426 - #38 ,
+INFO  11:01:26,426 - #46 i
+INFO  11:01:26,426 - #27 [
+INFO  11:01:26,426 - #28 ]
+INFO  11:01:26,426 - #24 ;
+INFO  11:01:26,426 - #46 char
+INFO  11:01:26,426 - #46 ch
+INFO  11:01:26,427 - #27 [
+INFO  11:01:26,427 - #28 ]
+INFO  11:01:26,427 - #24 ;
+INFO  11:01:26,427 - #22 {
+INFO  11:01:26,427 - #27 [
+INFO  11:01:26,427 - #28 ]
+INFO  11:01:26,427 - #29 =
+INFO  11:01:26,427 - #46 i
+INFO  11:01:26,427 - #24 ;
+INFO  11:01:26,427 - #27 [
+INFO  11:01:26,427 - #46 k
+INFO  11:01:26,427 - #38 ,
+INFO  11:01:26,427 - #46 po
+INFO  11:01:26,427 - #27 [
+INFO  11:01:26,427 - #43 31
+INFO  11:01:26,427 - #28 ]
+INFO  11:01:26,427 - #38 ,
+INFO  11:01:26,427 - #46 z
+INFO  11:01:26,427 - #38 ,
+INFO  11:01:26,427 - #46 x
+INFO  11:01:26,427 - #38 ,
+INFO  11:01:26,427 - #46 y
+INFO  11:01:26,427 - #27 [
+INFO  11:01:26,427 - #43 26
+INFO  11:01:26,427 - #28 ]
+INFO  11:01:26,427 - #28 ]
+INFO  11:01:26,427 - #29 =
+INFO  11:01:26,427 - #46 po
+INFO  11:01:26,427 - #24 ;
+INFO  11:01:26,427 - #46 x
+INFO  11:01:26,427 - #35 --
+INFO  11:01:26,427 - #24 ;
+INFO  11:01:26,427 - #46 k
+INFO  11:01:26,427 - #35 --
+INFO  11:01:26,427 - #24 ;
+INFO  11:01:26,427 - #46 y
+INFO  11:01:26,427 - #27 [
+INFO  11:01:26,428 - #43 5
+INFO  11:01:26,428 - #28 ]
+INFO  11:01:26,428 - #35 --
+INFO  11:01:26,428 - #24 ;
+INFO  11:01:26,428 - #46 po
+INFO  11:01:26,428 - #27 [
+INFO  11:01:26,428 - #43 10
+INFO  11:01:26,428 - #28 ]
+INFO  11:01:26,428 - #35 --
+INFO  11:01:26,428 - #24 ;
+INFO  11:01:26,428 - #40 print
+INFO  11:01:26,428 - #25 (
+INFO  11:01:26,428 - #31 -
+INFO  11:01:26,428 - #46 x
+INFO  11:01:26,428 - #32 *
+INFO  11:01:26,428 - #25 (
+INFO  11:01:26,428 - #46 y
+INFO  11:01:26,428 - #27 [
+INFO  11:01:26,428 - #43 7
+INFO  11:01:26,428 - #28 ]
+INFO  11:01:26,428 - #30 +
+INFO  11:01:26,428 - #46 k
+INFO  11:01:26,428 - #33 /
+INFO  11:01:26,428 - #46 po
+INFO  11:01:26,429 - #27 [
+INFO  11:01:26,429 - #43 13
+INFO  11:01:26,429 - #28 ]
+INFO  11:01:26,429 - #26 )
+INFO  11:01:26,429 - #26 )
+INFO  11:01:26,429 - #24 ;
+INFO  11:01:26,429 - #46 po
+INFO  11:01:26,429 - #29 =
+INFO  11:01:26,429 - #37 new
+INFO  11:01:26,429 - #46 int
+INFO  11:01:26,429 - #27 [
+INFO  11:01:26,429 - #43 19
+INFO  11:01:26,429 - #28 ]
+INFO  11:01:26,429 - #24 ;
+INFO  11:01:26,429 - #46 ch
+INFO  11:01:26,429 - #29 =
+INFO  11:01:26,429 - #37 new
+INFO  11:01:26,429 - #46 char
+INFO  11:01:26,429 - #27 [
+INFO  11:01:26,429 - #43 17
+INFO  11:01:26,429 - #28 ]
+INFO  11:01:26,429 - #24 ;
+INFO  11:01:26,429 - #46 po
+INFO  11:01:26,429 - #27 [
+INFO  11:01:26,429 - #43 34
+INFO  11:01:26,429 - #28 ]
+INFO  11:01:26,429 - #29 =
+INFO  11:01:26,429 - #43 61
+INFO  11:01:26,429 - #24 ;
+INFO  11:01:26,430 - #46 ch
+INFO  11:01:26,430 - #27 [
+INFO  11:01:26,430 - #43 87
+INFO  11:01:26,430 - #28 ]
+INFO  11:01:26,430 - #29 =
+INFO  11:01:26,430 - #44 h
+INFO  11:01:26,430 - #24 ;
+INFO  11:01:26,430 - #46 ch
+INFO  11:01:26,430 - #27 [
+INFO  11:01:26,430 - #43 0
+INFO  11:01:26,430 - #28 ]
+INFO  11:01:26,430 - #29 =
+INFO  11:01:26,430 - #46 eol
+INFO  11:01:26,430 - #24 ;
+INFO  11:01:26,430 - #23 }
+INFO  11:01:26,430 - #23 }
+INFO  11:01:26,431 - =================SINTAKSNO STABLO=================
+INFO  11:01:26,434 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DataDeclarations(
+    DataDeclarations(
+      DataDeclarations(
+        DataDeclarations(
+          DataDeclarations(
+            DataDeclarations(
+              DataDeclarations(
+                DataDeclarations(
+                  DataDeclarations(
+                    DataDeclarations(
+                      DataDeclarations(
+                        DataDeclarations(
+                          DataDeclarations(
+                            NoDataDeclarations(
+                            ) [NoDataDeclarations]
+                            VarDataDecl(
+                              VarDeclarations(
+                                VarDeclType(
+                                  Type(
+                                   int
+                                  ) [Type]
+                                ) [VarDeclType]
+                                SingleVarDeclaration(
+                                  ScalarVarDeclaration(
+                                   x
+                                  ) [ScalarVarDeclaration]
+                                ) [SingleVarDeclaration]
+                              ) [VarDeclarations]
+                            ) [VarDataDecl]
+                          ) [DataDeclarations]
+                          VarDataDecl(
+                            VarDeclarations(
+                              VarDeclType(
+                                Type(
+                                 int
+                                ) [Type]
+                              ) [VarDeclType]
+                              MultipleVarDeclarations(
+                                ArrayVarDeclaration(
+                                 x
+                                ) [ArrayVarDeclaration]
+                                SingleVarDeclaration(
+                                  ArrayVarDeclaration(
+                                   y
+                                  ) [ArrayVarDeclaration]
+                                ) [SingleVarDeclaration]
+                              ) [MultipleVarDeclarations]
+                            ) [VarDeclarations]
+                          ) [VarDataDecl]
+                        ) [DataDeclarations]
+                        VarDataDecl(
+                          VarDeclarations(
+                            VarDeclType(
+                              Type(
+                               int
+                              ) [Type]
+                            ) [VarDeclType]
+                            SingleVarDeclaration(
+                              ScalarVarDeclaration(
+                               z
+                              ) [ScalarVarDeclaration]
+                            ) [SingleVarDeclaration]
+                          ) [VarDeclarations]
+                        ) [VarDataDecl]
+                      ) [DataDeclarations]
+                      VarDataDecl(
+                        VarDeclarations(
+                          VarDeclType(
+                            Type(
+                             bool
+                            ) [Type]
+                          ) [VarDeclType]
+                          MultipleVarDeclarations(
+                            ScalarVarDeclaration(
+                             q
+                            ) [ScalarVarDeclaration]
+                            SingleVarDeclaration(
+                              ArrayVarDeclaration(
+                               w
+                              ) [ArrayVarDeclaration]
+                            ) [SingleVarDeclaration]
+                          ) [MultipleVarDeclarations]
+                        ) [VarDeclarations]
+                      ) [VarDataDecl]
+                    ) [DataDeclarations]
+                    VarDataDecl(
+                      VarDeclarations(
+                        VarDeclType(
+                          Type(
+                           bool
+                          ) [Type]
+                        ) [VarDeclType]
+                        SingleVarDeclaration(
+                          ScalarVarDeclaration(
+                           e
+                          ) [ScalarVarDeclaration]
+                        ) [SingleVarDeclaration]
+                      ) [VarDeclarations]
+                    ) [VarDataDecl]
+                  ) [DataDeclarations]
+                  VarDataDecl(
+                    VarDeclarations(
+                      VarDeclType(
+                        Type(
+                         char
+                        ) [Type]
+                      ) [VarDeclType]
+                      MultipleVarDeclarations(
+                        ScalarVarDeclaration(
+                         o
+                        ) [ScalarVarDeclaration]
+                        SingleVarDeclaration(
+                          ArrayVarDeclaration(
+                           p
+                          ) [ArrayVarDeclaration]
+                        ) [SingleVarDeclaration]
+                      ) [MultipleVarDeclarations]
+                    ) [VarDeclarations]
+                  ) [VarDataDecl]
+                ) [DataDeclarations]
+                VarDataDecl(
+                  VarDeclarations(
+                    VarDeclType(
+                      Type(
+                       Object
+                      ) [Type]
+                    ) [VarDeclType]
+                    SingleVarDeclaration(
+                      ScalarVarDeclaration(
+                       obj
+                      ) [ScalarVarDeclaration]
+                    ) [SingleVarDeclaration]
+                  ) [VarDeclarations]
+                ) [VarDataDecl]
+              ) [DataDeclarations]
+              ConstDataDecl(
+                ConstDeclarations(
+                  ConstDeclType(
+                    Type(
+                     int
+                    ) [Type]
+                  ) [ConstDeclType]
+                  MultipleConstDeclarations(
+                    SingleConstDeclaration(
+                      BoolConstDeclaration(
+                       klkl
+                       false
+                      ) [BoolConstDeclaration]
+                    ) [SingleConstDeclaration]
+                    CharConstDeclaration(
+                     lklk
+                     a
+                    ) [CharConstDeclaration]
+                  ) [MultipleConstDeclarations]
+                ) [ConstDeclarations]
+              ) [ConstDataDecl]
+            ) [DataDeclarations]
+            ConstDataDecl(
+              ConstDeclarations(
+                ConstDeclType(
+                  Type(
+                   char
+                  ) [Type]
+                ) [ConstDeclType]
+                SingleConstDeclaration(
+                  BoolConstDeclaration(
+                   znak1
+                   true
+                  ) [BoolConstDeclaration]
+                ) [SingleConstDeclaration]
+              ) [ConstDeclarations]
+            ) [ConstDataDecl]
+          ) [DataDeclarations]
+          ConstDataDecl(
+            ConstDeclarations(
+              ConstDeclType(
+                Type(
+                 bool
+                ) [Type]
+              ) [ConstDeclType]
+              MultipleConstDeclarations(
+                SingleConstDeclaration(
+                  NumConstDeclaration(
+                   prpr
+                   1
+                  ) [NumConstDeclaration]
+                ) [SingleConstDeclaration]
+                CharConstDeclaration(
+                 rprp
+                 a
+                ) [CharConstDeclaration]
+              ) [MultipleConstDeclarations]
+            ) [ConstDeclarations]
+          ) [ConstDataDecl]
+        ) [DataDeclarations]
+        ConstDataDecl(
+          ConstDeclarations(
+            ConstDeclType(
+              Type(
+               int
+              ) [Type]
+            ) [ConstDeclType]
+            MultipleConstDeclarations(
+              SingleConstDeclaration(
+                NumConstDeclaration(
+                 klkl_correct
+                 8
+                ) [NumConstDeclaration]
+              ) [SingleConstDeclaration]
+              NumConstDeclaration(
+               lklk_correct
+               18
+              ) [NumConstDeclaration]
+            ) [MultipleConstDeclarations]
+          ) [ConstDeclarations]
+        ) [ConstDataDecl]
+      ) [DataDeclarations]
+      ConstDataDecl(
+        ConstDeclarations(
+          ConstDeclType(
+            Type(
+             char
+            ) [Type]
+          ) [ConstDeclType]
+          SingleConstDeclaration(
+            CharConstDeclaration(
+             znak1_correct
+             z
+            ) [CharConstDeclaration]
+          ) [SingleConstDeclaration]
+        ) [ConstDeclarations]
+      ) [ConstDataDecl]
+    ) [DataDeclarations]
+    ConstDataDecl(
+      ConstDeclarations(
+        ConstDeclType(
+          Type(
+           bool
+          ) [Type]
+        ) [ConstDeclType]
+        MultipleConstDeclarations(
+          SingleConstDeclaration(
+            BoolConstDeclaration(
+             prpr_correct
+             true
+            ) [BoolConstDeclaration]
+          ) [SingleConstDeclaration]
+          BoolConstDeclaration(
+           rprp_correct
+           false
+          ) [BoolConstDeclaration]
+        ) [MultipleConstDeclarations]
+      ) [ConstDeclarations]
+    ) [ConstDataDecl]
+  ) [DataDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      VoidMethodDeclarationWithoutLocals(
+        MethodTypeName(
+         main
+        ) [MethodTypeName]
+        FormParams(
+          FormalParamDecls(
+            FormalParamDecls(
+              SingleFormalParamDecl(
+                ScalarFormalParamDecl(
+                  Type(
+                   int
+                  ) [Type]
+                 local_int
+                ) [ScalarFormalParamDecl]
+              ) [SingleFormalParamDecl]
+              ScalarFormalParamDecl(
+                Type(
+                 char
+                ) [Type]
+               local_char
+              ) [ScalarFormalParamDecl]
+            ) [FormalParamDecls]
+            ScalarFormalParamDecl(
+              Type(
+               bool
+              ) [Type]
+             local_bool
+            ) [ScalarFormalParamDecl]
+          ) [FormalParamDecls]
+        ) [FormParams]
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    Statements(
+                      Statements(
+                        Statements(
+                          Statements(
+                            Statements(
+                              Statements(
+                                Statements(
+                                  Statements(
+                                    Statements(
+                                      Statements(
+                                        Statements(
+                                          Statements(
+                                            Statements(
+                                              Statements(
+                                                NoStatements(
+                                                ) [NoStatements]
+                                                PrintStmt(
+                                                  SingleTermExpr(
+                                                    SingleFactorTerm(
+                                                      DesignatorFactor(
+                                                        ScalarDesignator(
+                                                         xyz
+                                                        ) [ScalarDesignator]
+                                                      ) [DesignatorFactor]
+                                                    ) [SingleFactorTerm]
+                                                  ) [SingleTermExpr]
+                                                ) [PrintStmt]
+                                              ) [Statements]
+                                              PrintStmt(
+                                                SingleTermExpr(
+                                                  SingleFactorTerm(
+                                                    DesignatorFactor(
+                                                      ScalarDesignator(
+                                                       y
+                                                      ) [ScalarDesignator]
+                                                    ) [DesignatorFactor]
+                                                  ) [SingleFactorTerm]
+                                                ) [SingleTermExpr]
+                                              ) [PrintStmt]
+                                            ) [Statements]
+                                            DesignatorStmt(
+                                              DesignatorAssignmentStmt(
+                                                DesignatorAssignment(
+                                                  ScalarDesignator(
+                                                   prpr_correct
+                                                  ) [ScalarDesignator]
+                                                  SingleTermExpr(
+                                                    SingleFactorTerm(
+                                                      DesignatorFactor(
+                                                        ScalarDesignator(
+                                                         znak1_correct
+                                                        ) [ScalarDesignator]
+                                                      ) [DesignatorFactor]
+                                                    ) [SingleFactorTerm]
+                                                  ) [SingleTermExpr]
+                                                ) [DesignatorAssignment]
+                                              ) [DesignatorAssignmentStmt]
+                                            ) [DesignatorStmt]
+                                          ) [Statements]
+                                          DesignatorStmt(
+                                            IncDesignatorStmt(
+                                              ScalarDesignator(
+                                               klkl_correct
+                                              ) [ScalarDesignator]
+                                            ) [IncDesignatorStmt]
+                                          ) [DesignatorStmt]
+                                        ) [Statements]
+                                        DesignatorStmt(
+                                          DecDesignatorStmt(
+                                            ScalarDesignator(
+                                             y
+                                            ) [ScalarDesignator]
+                                          ) [DecDesignatorStmt]
+                                        ) [DesignatorStmt]
+                                      ) [Statements]
+                                      DesignatorStmt(
+                                        DesignatorAssignmentWithSquareBrackets(
+                                          MultipleOptionalDesignators(
+                                            MultipleOptionalDesignators(
+                                              MultipleOptionalDesignators(
+                                                MultipleOptionalDesignators(
+                                                  MultipleOptionalDesignators(
+                                                    MultipleOptionalDesignators(
+                                                      MultipleOptionalDesignators(
+                                                        SingleOptionalDesignator(
+                                                          EmptyOptionalDesignator(
+                                                          ) [EmptyOptionalDesignator]
+                                                        ) [SingleOptionalDesignator]
+                                                        NotEmptyOptionalDesignator(
+                                                          ScalarDesignator(
+                                                           lklk_correct
+                                                          ) [ScalarDesignator]
+                                                        ) [NotEmptyOptionalDesignator]
+                                                      ) [MultipleOptionalDesignators]
+                                                      EmptyOptionalDesignator(
+                                                      ) [EmptyOptionalDesignator]
+                                                    ) [MultipleOptionalDesignators]
+                                                    NotEmptyOptionalDesignator(
+                                                      ScalarDesignator(
+                                                       obj
+                                                      ) [ScalarDesignator]
+                                                    ) [NotEmptyOptionalDesignator]
+                                                  ) [MultipleOptionalDesignators]
+                                                  NotEmptyOptionalDesignator(
+                                                    ScalarDesignator(
+                                                     y
+                                                    ) [ScalarDesignator]
+                                                  ) [NotEmptyOptionalDesignator]
+                                                ) [MultipleOptionalDesignators]
+                                                NotEmptyOptionalDesignator(
+                                                  ScalarDesignator(
+                                                   znak1_correct
+                                                  ) [ScalarDesignator]
+                                                ) [NotEmptyOptionalDesignator]
+                                              ) [MultipleOptionalDesignators]
+                                              EmptyOptionalDesignator(
+                                              ) [EmptyOptionalDesignator]
+                                            ) [MultipleOptionalDesignators]
+                                            NotEmptyOptionalDesignator(
+                                              ScalarDesignator(
+                                               z
+                                              ) [ScalarDesignator]
+                                            ) [NotEmptyOptionalDesignator]
+                                          ) [MultipleOptionalDesignators]
+                                          ScalarDesignator(
+                                           y
+                                          ) [ScalarDesignator]
+                                        ) [DesignatorAssignmentWithSquareBrackets]
+                                      ) [DesignatorStmt]
+                                    ) [Statements]
+                                    DesignatorStmt(
+                                      DesignatorAssignmentWithSquareBrackets(
+                                        MultipleOptionalDesignators(
+                                          MultipleOptionalDesignators(
+                                            MultipleOptionalDesignators(
+                                              MultipleOptionalDesignators(
+                                                MultipleOptionalDesignators(
+                                                  MultipleOptionalDesignators(
+                                                    MultipleOptionalDesignators(
+                                                      SingleOptionalDesignator(
+                                                        EmptyOptionalDesignator(
+                                                        ) [EmptyOptionalDesignator]
+                                                      ) [SingleOptionalDesignator]
+                                                      NotEmptyOptionalDesignator(
+                                                        ArrayDesignator(
+                                                          ArrayName(
+                                                           y
+                                                          ) [ArrayName]
+                                                          SingleTermExpr(
+                                                            SingleFactorTerm(
+                                                              NumConstFactor(
+                                                               0
+                                                              ) [NumConstFactor]
+                                                            ) [SingleFactorTerm]
+                                                          ) [SingleTermExpr]
+                                                        ) [ArrayDesignator]
+                                                      ) [NotEmptyOptionalDesignator]
+                                                    ) [MultipleOptionalDesignators]
+                                                    EmptyOptionalDesignator(
+                                                    ) [EmptyOptionalDesignator]
+                                                  ) [MultipleOptionalDesignators]
+                                                  NotEmptyOptionalDesignator(
+                                                    ArrayDesignator(
+                                                      ArrayName(
+                                                       y
+                                                      ) [ArrayName]
+                                                      SingleTermExpr(
+                                                        SingleFactorTerm(
+                                                          NumConstFactor(
+                                                           1
+                                                          ) [NumConstFactor]
+                                                        ) [SingleFactorTerm]
+                                                      ) [SingleTermExpr]
+                                                    ) [ArrayDesignator]
+                                                  ) [NotEmptyOptionalDesignator]
+                                                ) [MultipleOptionalDesignators]
+                                                NotEmptyOptionalDesignator(
+                                                  ArrayDesignator(
+                                                    ArrayName(
+                                                     y
+                                                    ) [ArrayName]
+                                                    SingleTermExpr(
+                                                      SingleFactorTerm(
+                                                        NumConstFactor(
+                                                         2
+                                                        ) [NumConstFactor]
+                                                      ) [SingleFactorTerm]
+                                                    ) [SingleTermExpr]
+                                                  ) [ArrayDesignator]
+                                                ) [NotEmptyOptionalDesignator]
+                                              ) [MultipleOptionalDesignators]
+                                              NotEmptyOptionalDesignator(
+                                                ScalarDesignator(
+                                                 znak1_correct
+                                                ) [ScalarDesignator]
+                                              ) [NotEmptyOptionalDesignator]
+                                            ) [MultipleOptionalDesignators]
+                                            EmptyOptionalDesignator(
+                                            ) [EmptyOptionalDesignator]
+                                          ) [MultipleOptionalDesignators]
+                                          NotEmptyOptionalDesignator(
+                                            ScalarDesignator(
+                                             z
+                                            ) [ScalarDesignator]
+                                          ) [NotEmptyOptionalDesignator]
+                                        ) [MultipleOptionalDesignators]
+                                        ScalarDesignator(
+                                         z
+                                        ) [ScalarDesignator]
+                                      ) [DesignatorAssignmentWithSquareBrackets]
+                                    ) [DesignatorStmt]
+                                  ) [Statements]
+                                  ReadStmt(
+                                    ScalarDesignator(
+                                     z
+                                    ) [ScalarDesignator]
+                                  ) [ReadStmt]
+                                ) [Statements]
+                                ReadStmt(
+                                  ScalarDesignator(
+                                   y
+                                  ) [ScalarDesignator]
+                                ) [ReadStmt]
+                              ) [Statements]
+                              ReadStmt(
+                                ScalarDesignator(
+                                 klkl_correct
+                                ) [ScalarDesignator]
+                              ) [ReadStmt]
+                            ) [Statements]
+                            ReadStmt(
+                              ScalarDesignator(
+                               obj
+                              ) [ScalarDesignator]
+                            ) [ReadStmt]
+                          ) [Statements]
+                          DesignatorStmt(
+                            DesignatorAssignmentStmt(
+                              DesignatorAssignment(
+                                ScalarDesignator(
+                                 x
+                                ) [ScalarDesignator]
+                                SingleTermExpr(
+                                  SingleFactorTerm(
+                                    DesignatorFactor(
+                                      ArrayDesignator(
+                                        ArrayName(
+                                         x
+                                        ) [ArrayName]
+                                        SingleTermExpr(
+                                          SingleFactorTerm(
+                                            DesignatorFactor(
+                                              ScalarDesignator(
+                                               local_bool
+                                              ) [ScalarDesignator]
+                                            ) [DesignatorFactor]
+                                          ) [SingleFactorTerm]
+                                        ) [SingleTermExpr]
+                                      ) [ArrayDesignator]
+                                    ) [DesignatorFactor]
+                                  ) [SingleFactorTerm]
+                                ) [SingleTermExpr]
+                              ) [DesignatorAssignment]
+                            ) [DesignatorAssignmentStmt]
+                          ) [DesignatorStmt]
+                        ) [Statements]
+                        DesignatorStmt(
+                          DesignatorAssignmentStmt(
+                            DesignatorAssignment(
+                              ScalarDesignator(
+                               y
+                              ) [ScalarDesignator]
+                              SingleTermExpr(
+                                SingleFactorTerm(
+                                  NewArrayFactor(
+                                    Type(
+                                     char
+                                    ) [Type]
+                                    SingleTermExpr(
+                                      SingleFactorTerm(
+                                        BoolConstFactor(
+                                         true
+                                        ) [BoolConstFactor]
+                                      ) [SingleFactorTerm]
+                                    ) [SingleTermExpr]
+                                  ) [NewArrayFactor]
+                                ) [SingleFactorTerm]
+                              ) [SingleTermExpr]
+                            ) [DesignatorAssignment]
+                          ) [DesignatorAssignmentStmt]
+                        ) [DesignatorStmt]
+                      ) [Statements]
+                      DesignatorStmt(
+                        DesignatorAssignmentStmt(
+                          DesignatorAssignment(
+                            ScalarDesignator(
+                             x
+                            ) [ScalarDesignator]
+                            SingleTermExpr(
+                              MultipleFactorTerm(
+                                SingleFactorTerm(
+                                  DesignatorFactor(
+                                    ScalarDesignator(
+                                     z
+                                    ) [ScalarDesignator]
+                                  ) [DesignatorFactor]
+                                ) [SingleFactorTerm]
+                                Mul(
+                                ) [Mul]
+                                DesignatorFactor(
+                                  ScalarDesignator(
+                                   local_char
+                                  ) [ScalarDesignator]
+                                ) [DesignatorFactor]
+                              ) [MultipleFactorTerm]
+                            ) [SingleTermExpr]
+                          ) [DesignatorAssignment]
+                        ) [DesignatorAssignmentStmt]
+                      ) [DesignatorStmt]
+                    ) [Statements]
+                    DesignatorStmt(
+                      DesignatorAssignmentStmt(
+                        DesignatorAssignment(
+                          ScalarDesignator(
+                           x
+                          ) [ScalarDesignator]
+                          NegSingleTermExpr(
+                            SingleFactorTerm(
+                              DesignatorFactor(
+                                ScalarDesignator(
+                                 local_bool
+                                ) [ScalarDesignator]
+                              ) [DesignatorFactor]
+                            ) [SingleFactorTerm]
+                          ) [NegSingleTermExpr]
+                        ) [DesignatorAssignment]
+                      ) [DesignatorAssignmentStmt]
+                    ) [DesignatorStmt]
+                  ) [Statements]
+                  DesignatorStmt(
+                    DesignatorAssignmentStmt(
+                      DesignatorAssignment(
+                        ScalarDesignator(
+                         x
+                        ) [ScalarDesignator]
+                        MultipleTermExpr(
+                          SingleTermExpr(
+                            SingleFactorTerm(
+                              DesignatorFactor(
+                                ScalarDesignator(
+                                 prpr_correct
+                                ) [ScalarDesignator]
+                              ) [DesignatorFactor]
+                            ) [SingleFactorTerm]
+                          ) [SingleTermExpr]
+                          Add(
+                          ) [Add]
+                          SingleFactorTerm(
+                            DesignatorFactor(
+                              ScalarDesignator(
+                               rprp_correct
+                              ) [ScalarDesignator]
+                            ) [DesignatorFactor]
+                          ) [SingleFactorTerm]
+                        ) [MultipleTermExpr]
+                      ) [DesignatorAssignment]
+                    ) [DesignatorAssignmentStmt]
+                  ) [DesignatorStmt]
+                ) [Statements]
+                DesignatorStmt(
+                  IncDesignatorStmt(
+                    ArrayDesignator(
+                      ArrayName(
+                       y
+                      ) [ArrayName]
+                      SingleTermExpr(
+                        SingleFactorTerm(
+                          NumConstFactor(
+                           1
+                          ) [NumConstFactor]
+                        ) [SingleFactorTerm]
+                      ) [SingleTermExpr]
+                    ) [ArrayDesignator]
+                  ) [IncDesignatorStmt]
+                ) [DesignatorStmt]
+              ) [Statements]
+              DesignatorStmt(
+                IncDesignatorStmt(
+                  ScalarDesignator(
+                   x
+                  ) [ScalarDesignator]
+                ) [IncDesignatorStmt]
+              ) [DesignatorStmt]
+            ) [Statements]
+            DesignatorStmt(
+              DesignatorAssignmentStmt(
+                DesignatorAssignment(
+                  ScalarDesignator(
+                   x
+                  ) [ScalarDesignator]
+                  SingleTermExpr(
+                    MultipleFactorTerm(
+                      SingleFactorTerm(
+                        ExprFactor(
+                          MultipleTermExpr(
+                            SingleTermExpr(
+                              SingleFactorTerm(
+                                DesignatorFactor(
+                                  ArrayDesignator(
+                                    ArrayName(
+                                     y
+                                    ) [ArrayName]
+                                    SingleTermExpr(
+                                      SingleFactorTerm(
+                                        NumConstFactor(
+                                         1
+                                        ) [NumConstFactor]
+                                      ) [SingleFactorTerm]
+                                    ) [SingleTermExpr]
+                                  ) [ArrayDesignator]
+                                ) [DesignatorFactor]
+                              ) [SingleFactorTerm]
+                            ) [SingleTermExpr]
+                            Add(
+                            ) [Add]
+                            SingleFactorTerm(
+                              NumConstFactor(
+                               5
+                              ) [NumConstFactor]
+                            ) [SingleFactorTerm]
+                          ) [MultipleTermExpr]
+                        ) [ExprFactor]
+                      ) [SingleFactorTerm]
+                      Mul(
+                      ) [Mul]
+                      DesignatorFactor(
+                        ScalarDesignator(
+                         x
+                        ) [ScalarDesignator]
+                      ) [DesignatorFactor]
+                    ) [MultipleFactorTerm]
+                  ) [SingleTermExpr]
+                ) [DesignatorAssignment]
+              ) [DesignatorAssignmentStmt]
+            ) [DesignatorStmt]
+          ) [Statements]
+          PrintStmt(
+            SingleTermExpr(
+              SingleFactorTerm(
+                DesignatorFactor(
+                  ScalarDesignator(
+                   klkl_correct
+                  ) [ScalarDesignator]
+                ) [DesignatorFactor]
+              ) [SingleFactorTerm]
+            ) [SingleTermExpr]
+          ) [PrintStmt]
+        ) [Statements]
+      ) [VoidMethodDeclarationWithoutLocals]
+    ) [MethodDeclarations]
+    VoidMethodDeclaration(
+      MethodTypeName(
+       getChar
+      ) [MethodTypeName]
+      FormParams(
+        FormalParamDecls(
+          FormalParamDecls(
+            SingleFormalParamDecl(
+              ScalarFormalParamDecl(
+                Type(
+                 int
+                ) [Type]
+               g
+              ) [ScalarFormalParamDecl]
+            ) [SingleFormalParamDecl]
+            ScalarFormalParamDecl(
+              Type(
+               char
+              ) [Type]
+             h
+            ) [ScalarFormalParamDecl]
+          ) [FormalParamDecls]
+          ScalarFormalParamDecl(
+            Type(
+             bool
+            ) [Type]
+           b
+          ) [ScalarFormalParamDecl]
+        ) [FormalParamDecls]
+      ) [FormParams]
+      MultipleLocals(
+        MultipleLocals(
+          SingleLocal(
+            VarDeclarations(
+              VarDeclType(
+                Type(
+                 int
+                ) [Type]
+              ) [VarDeclType]
+              MultipleVarDeclarations(
+                ScalarVarDeclaration(
+                 k
+                ) [ScalarVarDeclaration]
+                MultipleVarDeclarations(
+                  ScalarVarDeclaration(
+                   z
+                  ) [ScalarVarDeclaration]
+                  SingleVarDeclaration(
+                    ArrayVarDeclaration(
+                     po
+                    ) [ArrayVarDeclaration]
+                  ) [SingleVarDeclaration]
+                ) [MultipleVarDeclarations]
+              ) [MultipleVarDeclarations]
+            ) [VarDeclarations]
+          ) [SingleLocal]
+          VarDeclarations(
+            VarDeclType(
+              Type(
+               bool
+              ) [Type]
+            ) [VarDeclType]
+            MultipleVarDeclarations(
+              ScalarVarDeclaration(
+               u
+              ) [ScalarVarDeclaration]
+              SingleVarDeclaration(
+                ArrayVarDeclaration(
+                 i
+                ) [ArrayVarDeclaration]
+              ) [SingleVarDeclaration]
+            ) [MultipleVarDeclarations]
+          ) [VarDeclarations]
+        ) [MultipleLocals]
+        VarDeclarations(
+          VarDeclType(
+            Type(
+             char
+            ) [Type]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            ArrayVarDeclaration(
+             ch
+            ) [ArrayVarDeclaration]
+          ) [SingleVarDeclaration]
+        ) [VarDeclarations]
+      ) [MultipleLocals]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    Statements(
+                      Statements(
+                        Statements(
+                          Statements(
+                            Statements(
+                              NoStatements(
+                              ) [NoStatements]
+                              DesignatorStmt(
+                                DesignatorAssignmentWithSquareBrackets(
+                                  SingleOptionalDesignator(
+                                    EmptyOptionalDesignator(
+                                    ) [EmptyOptionalDesignator]
+                                  ) [SingleOptionalDesignator]
+                                  ScalarDesignator(
+                                   i
+                                  ) [ScalarDesignator]
+                                ) [DesignatorAssignmentWithSquareBrackets]
+                              ) [DesignatorStmt]
+                            ) [Statements]
+                            DesignatorStmt(
+                              DesignatorAssignmentWithSquareBrackets(
+                                MultipleOptionalDesignators(
+                                  MultipleOptionalDesignators(
+                                    MultipleOptionalDesignators(
+                                      MultipleOptionalDesignators(
+                                        SingleOptionalDesignator(
+                                          NotEmptyOptionalDesignator(
+                                            ScalarDesignator(
+                                             k
+                                            ) [ScalarDesignator]
+                                          ) [NotEmptyOptionalDesignator]
+                                        ) [SingleOptionalDesignator]
+                                        NotEmptyOptionalDesignator(
+                                          ArrayDesignator(
+                                            ArrayName(
+                                             po
+                                            ) [ArrayName]
+                                            SingleTermExpr(
+                                              SingleFactorTerm(
+                                                NumConstFactor(
+                                                 31
+                                                ) [NumConstFactor]
+                                              ) [SingleFactorTerm]
+                                            ) [SingleTermExpr]
+                                          ) [ArrayDesignator]
+                                        ) [NotEmptyOptionalDesignator]
+                                      ) [MultipleOptionalDesignators]
+                                      NotEmptyOptionalDesignator(
+                                        ScalarDesignator(
+                                         z
+                                        ) [ScalarDesignator]
+                                      ) [NotEmptyOptionalDesignator]
+                                    ) [MultipleOptionalDesignators]
+                                    NotEmptyOptionalDesignator(
+                                      ScalarDesignator(
+                                       x
+                                      ) [ScalarDesignator]
+                                    ) [NotEmptyOptionalDesignator]
+                                  ) [MultipleOptionalDesignators]
+                                  NotEmptyOptionalDesignator(
+                                    ArrayDesignator(
+                                      ArrayName(
+                                       y
+                                      ) [ArrayName]
+                                      SingleTermExpr(
+                                        SingleFactorTerm(
+                                          NumConstFactor(
+                                           26
+                                          ) [NumConstFactor]
+                                        ) [SingleFactorTerm]
+                                      ) [SingleTermExpr]
+                                    ) [ArrayDesignator]
+                                  ) [NotEmptyOptionalDesignator]
+                                ) [MultipleOptionalDesignators]
+                                ScalarDesignator(
+                                 po
+                                ) [ScalarDesignator]
+                              ) [DesignatorAssignmentWithSquareBrackets]
+                            ) [DesignatorStmt]
+                          ) [Statements]
+                          DesignatorStmt(
+                            DecDesignatorStmt(
+                              ScalarDesignator(
+                               x
+                              ) [ScalarDesignator]
+                            ) [DecDesignatorStmt]
+                          ) [DesignatorStmt]
+                        ) [Statements]
+                        DesignatorStmt(
+                          DecDesignatorStmt(
+                            ScalarDesignator(
+                             k
+                            ) [ScalarDesignator]
+                          ) [DecDesignatorStmt]
+                        ) [DesignatorStmt]
+                      ) [Statements]
+                      DesignatorStmt(
+                        DecDesignatorStmt(
+                          ArrayDesignator(
+                            ArrayName(
+                             y
+                            ) [ArrayName]
+                            SingleTermExpr(
+                              SingleFactorTerm(
+                                NumConstFactor(
+                                 5
+                                ) [NumConstFactor]
+                              ) [SingleFactorTerm]
+                            ) [SingleTermExpr]
+                          ) [ArrayDesignator]
+                        ) [DecDesignatorStmt]
+                      ) [DesignatorStmt]
+                    ) [Statements]
+                    DesignatorStmt(
+                      DecDesignatorStmt(
+                        ArrayDesignator(
+                          ArrayName(
+                           po
+                          ) [ArrayName]
+                          SingleTermExpr(
+                            SingleFactorTerm(
+                              NumConstFactor(
+                               10
+                              ) [NumConstFactor]
+                            ) [SingleFactorTerm]
+                          ) [SingleTermExpr]
+                        ) [ArrayDesignator]
+                      ) [DecDesignatorStmt]
+                    ) [DesignatorStmt]
+                  ) [Statements]
+                  PrintStmt(
+                    NegSingleTermExpr(
+                      MultipleFactorTerm(
+                        SingleFactorTerm(
+                          DesignatorFactor(
+                            ScalarDesignator(
+                             x
+                            ) [ScalarDesignator]
+                          ) [DesignatorFactor]
+                        ) [SingleFactorTerm]
+                        Mul(
+                        ) [Mul]
+                        ExprFactor(
+                          MultipleTermExpr(
+                            SingleTermExpr(
+                              SingleFactorTerm(
+                                DesignatorFactor(
+                                  ArrayDesignator(
+                                    ArrayName(
+                                     y
+                                    ) [ArrayName]
+                                    SingleTermExpr(
+                                      SingleFactorTerm(
+                                        NumConstFactor(
+                                         7
+                                        ) [NumConstFactor]
+                                      ) [SingleFactorTerm]
+                                    ) [SingleTermExpr]
+                                  ) [ArrayDesignator]
+                                ) [DesignatorFactor]
+                              ) [SingleFactorTerm]
+                            ) [SingleTermExpr]
+                            Add(
+                            ) [Add]
+                            MultipleFactorTerm(
+                              SingleFactorTerm(
+                                DesignatorFactor(
+                                  ScalarDesignator(
+                                   k
+                                  ) [ScalarDesignator]
+                                ) [DesignatorFactor]
+                              ) [SingleFactorTerm]
+                              Div(
+                              ) [Div]
+                              DesignatorFactor(
+                                ArrayDesignator(
+                                  ArrayName(
+                                   po
+                                  ) [ArrayName]
+                                  SingleTermExpr(
+                                    SingleFactorTerm(
+                                      NumConstFactor(
+                                       13
+                                      ) [NumConstFactor]
+                                    ) [SingleFactorTerm]
+                                  ) [SingleTermExpr]
+                                ) [ArrayDesignator]
+                              ) [DesignatorFactor]
+                            ) [MultipleFactorTerm]
+                          ) [MultipleTermExpr]
+                        ) [ExprFactor]
+                      ) [MultipleFactorTerm]
+                    ) [NegSingleTermExpr]
+                  ) [PrintStmt]
+                ) [Statements]
+                DesignatorStmt(
+                  DesignatorAssignmentStmt(
+                    DesignatorAssignment(
+                      ScalarDesignator(
+                       po
+                      ) [ScalarDesignator]
+                      SingleTermExpr(
+                        SingleFactorTerm(
+                          NewArrayFactor(
+                            Type(
+                             int
+                            ) [Type]
+                            SingleTermExpr(
+                              SingleFactorTerm(
+                                NumConstFactor(
+                                 19
+                                ) [NumConstFactor]
+                              ) [SingleFactorTerm]
+                            ) [SingleTermExpr]
+                          ) [NewArrayFactor]
+                        ) [SingleFactorTerm]
+                      ) [SingleTermExpr]
+                    ) [DesignatorAssignment]
+                  ) [DesignatorAssignmentStmt]
+                ) [DesignatorStmt]
+              ) [Statements]
+              DesignatorStmt(
+                DesignatorAssignmentStmt(
+                  DesignatorAssignment(
+                    ScalarDesignator(
+                     ch
+                    ) [ScalarDesignator]
+                    SingleTermExpr(
+                      SingleFactorTerm(
+                        NewArrayFactor(
+                          Type(
+                           char
+                          ) [Type]
+                          SingleTermExpr(
+                            SingleFactorTerm(
+                              NumConstFactor(
+                               17
+                              ) [NumConstFactor]
+                            ) [SingleFactorTerm]
+                          ) [SingleTermExpr]
+                        ) [NewArrayFactor]
+                      ) [SingleFactorTerm]
+                    ) [SingleTermExpr]
+                  ) [DesignatorAssignment]
+                ) [DesignatorAssignmentStmt]
+              ) [DesignatorStmt]
+            ) [Statements]
+            DesignatorStmt(
+              DesignatorAssignmentStmt(
+                DesignatorAssignment(
+                  ArrayDesignator(
+                    ArrayName(
+                     po
+                    ) [ArrayName]
+                    SingleTermExpr(
+                      SingleFactorTerm(
+                        NumConstFactor(
+                         34
+                        ) [NumConstFactor]
+                      ) [SingleFactorTerm]
+                    ) [SingleTermExpr]
+                  ) [ArrayDesignator]
+                  SingleTermExpr(
+                    SingleFactorTerm(
+                      NumConstFactor(
+                       61
+                      ) [NumConstFactor]
+                    ) [SingleFactorTerm]
+                  ) [SingleTermExpr]
+                ) [DesignatorAssignment]
+              ) [DesignatorAssignmentStmt]
+            ) [DesignatorStmt]
+          ) [Statements]
+          DesignatorStmt(
+            DesignatorAssignmentStmt(
+              DesignatorAssignment(
+                ArrayDesignator(
+                  ArrayName(
+                   ch
+                  ) [ArrayName]
+                  SingleTermExpr(
+                    SingleFactorTerm(
+                      NumConstFactor(
+                       87
+                      ) [NumConstFactor]
+                    ) [SingleFactorTerm]
+                  ) [SingleTermExpr]
+                ) [ArrayDesignator]
+                SingleTermExpr(
+                  SingleFactorTerm(
+                    CharConstFactor(
+                     h
+                    ) [CharConstFactor]
+                  ) [SingleFactorTerm]
+                ) [SingleTermExpr]
+              ) [DesignatorAssignment]
+            ) [DesignatorAssignmentStmt]
+          ) [DesignatorStmt]
+        ) [Statements]
+        DesignatorStmt(
+          DesignatorAssignmentStmt(
+            DesignatorAssignment(
+              ArrayDesignator(
+                ArrayName(
+                 ch
+                ) [ArrayName]
+                SingleTermExpr(
+                  SingleFactorTerm(
+                    NumConstFactor(
+                     0
+                    ) [NumConstFactor]
+                  ) [SingleFactorTerm]
+                ) [SingleTermExpr]
+              ) [ArrayDesignator]
+              SingleTermExpr(
+                SingleFactorTerm(
+                  DesignatorFactor(
+                    ScalarDesignator(
+                     eol
+                    ) [ScalarDesignator]
+                  ) [DesignatorFactor]
+                ) [SingleFactorTerm]
+              ) [SingleTermExpr]
+            ) [DesignatorAssignment]
+          ) [DesignatorAssignmentStmt]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [VoidMethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  11:01:26,435 - =================SEMANTICKA ANALIZA=================
+INFO  11:01:26,441 - Deklarisana skalarna promenljiva x na liniji 2
+ERROR 11:01:26,441 - Greska na liniji 2 : ime x je vec deklarisano! 
+INFO  11:01:26,442 - Deklarisana nizovska promenljiva y na liniji 2
+INFO  11:01:26,442 - Deklarisana skalarna promenljiva z na liniji 3
+INFO  11:01:26,442 - Deklarisana skalarna promenljiva q na liniji 4
+INFO  11:01:26,442 - Deklarisana nizovska promenljiva w na liniji 4
+INFO  11:01:26,442 - Deklarisana skalarna promenljiva e na liniji 5
+INFO  11:01:26,442 - Deklarisana skalarna promenljiva o na liniji 6
+INFO  11:01:26,442 - Deklarisana nizovska promenljiva p na liniji 6
+ERROR 11:01:26,442 - Greska na liniji 7 Nije pronadjen tip Object u tabeli simbola! 
+INFO  11:01:26,442 - Deklarisana skalarna promenljiva obj na liniji 7
+ERROR 11:01:26,442 - Greska na liniji 9 : logicki literal false se ne moze dodeliti konstanti klkl.
+ERROR 11:01:26,442 - Greska na liniji 9 : znakovni literal a se ne moze dodeliti konstanti lklk.
+ERROR 11:01:26,442 - Greska na liniji 10 : logicki literal true se ne moze dodeliti konstanti znak1.
+ERROR 11:01:26,442 - Greska na liniji 11 : numericki literal 1 se ne moze dodeliti konstanti prpr.
+ERROR 11:01:26,442 - Greska na liniji 11 : znakovni literal a se ne moze dodeliti konstanti rprp.
+INFO  11:01:26,442 - Deklarisana celobrojna konstanta klkl_correct na liniji 13
+INFO  11:01:26,442 - Deklarisana celobrojna konstanta lklk_correct na liniji 13
+INFO  11:01:26,442 - Deklarisana znakovna konstanta znak1_correct na liniji 14
+INFO  11:01:26,442 - Deklarisana logicka konstanta prpr_correct na liniji 15
+INFO  11:01:26,442 - Deklarisana logicka konstanta rprp_correct na liniji 15
+INFO  11:01:26,442 - Obradjuje se funkcija main na liniji 17
+INFO  11:01:26,442 - Deklarisana skalarna promenljiva local_int na liniji 17
+INFO  11:01:26,442 - Deklarisana skalarna promenljiva local_char na liniji 17
+INFO  11:01:26,442 - Deklarisana skalarna promenljiva local_bool na liniji 17
+ERROR 11:01:26,442 - Greska na liniji 19 : ime xyz nije deklarisano! 
+ERROR 11:01:26,442 - Greska na liniji 19 : tip argumenta print funkcije mora biti int,char ili bool.
+INFO  11:01:26,442 - Pretraga na 20(y), nadjeno Var y: Arr of int, 1, 0 
+ERROR 11:01:26,442 - Greska na liniji 20 : tip argumenta print funkcije mora biti int,char ili bool.
+INFO  11:01:26,442 - Pretraga na 22(prpr_correct), nadjeno Con prpr_correct: , 1, 0 
+INFO  11:01:26,442 - Pretraga na 22(znak1_correct), nadjeno Con znak1_correct: char, 122, 0 
+ERROR 11:01:26,442 - Greska na liniji 22 :  nekompatibilni tipovi u dodeli vrednosti! 
+ERROR 11:01:26,442 - Greska na liniji 22 :  sa leve strane znaka jednakosti se mora nalaziti promenljiva ili element niza! 
+INFO  11:01:26,442 - Pretraga na 24(klkl_correct), nadjeno Con klkl_correct: int, 8, 0 
+ERROR 11:01:26,442 - Greska na liniji 24 : inkrementiranje zahteva da je promenljiva celobrojna! 
+INFO  11:01:26,442 - Pretraga na 25(y), nadjeno Var y: Arr of int, 1, 0 
+ERROR 11:01:26,443 - Greska na liniji 25 : dekrementiranje zahteva da je promenljiva celobrojna! 
+INFO  11:01:26,443 - Pretraga na 27(lklk_correct), nadjeno Con lklk_correct: int, 18, 0 
+ERROR 11:01:26,443 - Greska na liniji 27 :  identifikator lklk_correct nije niti promenljiva,niti element niza! 
+INFO  11:01:26,443 - Pretraga na 27(obj), nadjeno Var obj: notype, 8, 0 
+INFO  11:01:26,443 - Pretraga na 27(y), nadjeno Var y: Arr of int, 1, 0 
+INFO  11:01:26,443 - Pretraga na 27(znak1_correct), nadjeno Con znak1_correct: char, 122, 0 
+ERROR 11:01:26,443 - Greska na liniji 27 :  identifikator znak1_correct nije niti promenljiva,niti element niza! 
+INFO  11:01:26,443 - Pretraga na 27(z), nadjeno Var z: int, 2, 0 
+INFO  11:01:26,443 - Pretraga na 27(y), nadjeno Var y: Arr of int, 1, 0 
+ERROR 11:01:26,443 - Greska na liniji 2 :  nekompatibilni tipovi promenljivih y i obj u dodeli vrednosti! 
+ERROR 11:01:26,443 - Greska na liniji 2 :  nekompatibilni tipovi promenljivih y i y u dodeli vrednosti! 
+INFO  11:01:26,443 - Pretraga na 28(znak1_correct), nadjeno Con znak1_correct: char, 122, 0 
+ERROR 11:01:26,443 - Greska na liniji 28 :  identifikator znak1_correct nije niti promenljiva,niti element niza! 
+INFO  11:01:26,443 - Pretraga na 28(z), nadjeno Var z: int, 2, 0 
+INFO  11:01:26,443 - Pretraga na 28(z), nadjeno Var z: int, 2, 0 
+ERROR 11:01:26,443 - Greska na liniji 2 :  identifikator z nije niz! 
+INFO  11:01:26,443 - Pretraga na 30(z), nadjeno Var z: int, 2, 0 
+INFO  11:01:26,443 - Pretraga na 31(y), nadjeno Var y: Arr of int, 1, 0 
+ERROR 11:01:26,443 - Greska na liniji 31 : tip argumenta read funkcije mora biti int,char ili bool.
+INFO  11:01:26,443 - Pretraga na 32(klkl_correct), nadjeno Con klkl_correct: int, 8, 0 
+ERROR 11:01:26,443 - Greska na liniji 32 : tip argumenta read funkcije mora biti promenljiva ili element niza.
+INFO  11:01:26,443 - Pretraga na 33(obj), nadjeno Var obj: notype, 8, 0 
+ERROR 11:01:26,443 - Greska na liniji 33 : tip argumenta read funkcije mora biti int,char ili bool.
+INFO  11:01:26,443 - Pretraga na 35(x), nadjeno Var x: int, 0, 0 
+INFO  11:01:26,443 - Pretraga na 35(local_bool), nadjeno Var local_bool: , 2, 1 
+ERROR 11:01:26,443 - Greska na liniji 35 : ime x nije nizovska promenljiva! 
+ERROR 11:01:26,443 - Greska na liniji 35 : Tip indeksa mora biti celobrojni!
+INFO  11:01:26,444 - Pretraga na 36(y), nadjeno Var y: Arr of int, 1, 0 
+ERROR 11:01:26,444 - Greska na liniji 36 : broj elemenata niza mora biti celobrojni podatak!
+ERROR 11:01:26,444 - Greska na liniji 36 :  nekompatibilni tipovi u dodeli vrednosti! 
+INFO  11:01:26,444 - Pretraga na 37(x), nadjeno Var x: int, 0, 0 
+INFO  11:01:26,444 - Pretraga na 37(z), nadjeno Var z: int, 2, 0 
+INFO  11:01:26,444 - Pretraga na 37(local_char), nadjeno Var local_char: char, 1, 1 
+ERROR 11:01:26,444 - Greska na liniji 37 : nekompatibilni tipovi u izrazu za mnozenje.
+ERROR 11:01:26,444 - Greska na liniji 37 :  nekompatibilni tipovi u dodeli vrednosti! 
+INFO  11:01:26,444 - Pretraga na 38(x), nadjeno Var x: int, 0, 0 
+INFO  11:01:26,444 - Pretraga na 38(local_bool), nadjeno Var local_bool: , 2, 1 
+ERROR 11:01:26,444 - Greska na liniji 38 : ocekivan tip je celobrojni za operaciju negacije.
+ERROR 11:01:26,444 - Greska na liniji 38 :  nekompatibilni tipovi u dodeli vrednosti! 
+INFO  11:01:26,444 - Pretraga na 39(x), nadjeno Var x: int, 0, 0 
+INFO  11:01:26,444 - Pretraga na 39(prpr_correct), nadjeno Con prpr_correct: , 1, 0 
+INFO  11:01:26,444 - Pretraga na 39(rprp_correct), nadjeno Con rprp_correct: , 0, 0 
+ERROR 11:01:26,444 - Greska na liniji 39 : nekompatibilni tipovi u izrazu za sabiranje.
+ERROR 11:01:26,444 - Greska na liniji 39 :  nekompatibilni tipovi u dodeli vrednosti! 
+INFO  11:01:26,444 - Pretraga na 42(x), nadjeno Var x: int, 0, 0 
+INFO  11:01:26,444 - Pretraga na 43(x), nadjeno Var x: int, 0, 0 
+INFO  11:01:26,444 - Pretraga na 43(x), nadjeno Var x: int, 0, 0 
+INFO  11:01:26,444 - Pretraga na 45(klkl_correct), nadjeno Con klkl_correct: int, 8, 0 
+INFO  11:01:26,444 - Obradjuje se funkcija getChar na liniji 48
+INFO  11:01:26,445 - Deklarisana skalarna promenljiva g na liniji 48
+INFO  11:01:26,445 - Deklarisana skalarna promenljiva h na liniji 48
+INFO  11:01:26,445 - Deklarisana skalarna promenljiva b na liniji 48
+INFO  11:01:26,445 - Deklarisana skalarna promenljiva k na liniji 49
+INFO  11:01:26,445 - Deklarisana skalarna promenljiva z na liniji 49
+INFO  11:01:26,445 - Deklarisana nizovska promenljiva po na liniji 49
+INFO  11:01:26,445 - Deklarisana skalarna promenljiva u na liniji 49
+INFO  11:01:26,445 - Deklarisana nizovska promenljiva i na liniji 49
+INFO  11:01:26,445 - Deklarisana nizovska promenljiva ch na liniji 49
+INFO  11:01:26,445 - Pretraga na 51(i), nadjeno Var i: Arr of , 7, 1 
+INFO  11:01:26,445 - Pretraga na 52(k), nadjeno Var k: int, 3, 1 
+INFO  11:01:26,445 - Pretraga na 52(z), nadjeno Var z: int, 4, 1 
+INFO  11:01:26,445 - Pretraga na 52(x), nadjeno Var x: int, 0, 0 
+INFO  11:01:26,445 - Pretraga na 52(po), nadjeno Var po: Arr of int, 5, 1 
+INFO  11:01:26,445 - Pretraga na 53(x), nadjeno Var x: int, 0, 0 
+INFO  11:01:26,445 - Pretraga na 54(k), nadjeno Var k: int, 3, 1 
+INFO  11:01:26,445 - Pretraga na 57(x), nadjeno Var x: int, 0, 0 
+INFO  11:01:26,445 - Pretraga na 57(k), nadjeno Var k: int, 3, 1 
+INFO  11:01:26,445 - Pretraga na 58(po), nadjeno Var po: Arr of int, 5, 1 
+INFO  11:01:26,445 - Pretraga na 59(ch), nadjeno Var ch: Arr of char, 8, 1 
+INFO  11:01:26,445 - Pretraga na 62(eol), nadjeno Con eol: char, 10, 0 
+ERROR 11:01:26,445 - Greska: Program mora sadrzati funkciju main bez formalnih parametara.
+INFO  11:01:26,445 - =================SINTAKSNA ANALIZA=================
+INFO  11:01:26,445 - 2	methods in program
+INFO  11:01:26,445 - 6	global variables
+INFO  11:01:26,445 - 10	global constants
+INFO  11:01:26,445 - 3	global arrays
+INFO  11:01:26,445 - 0	local variables in main
+INFO  11:01:26,446 - 20	statements in main
+=====================TABELA SIMBOLA=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: bool, -1, -1 
+Meth printBoolObj: notype, 0, 1 
+   Var boolValue: bool, 0, 1 
+   Var width: int, 1, 1 
+   Var empty: int, 2, 1 
+   Var length: int, 3, 1 
+
+Meth readBoolObj: bool, 0, 1 
+   Var inp: Arr of char, 0, 1 
+   Var i: int, 1, 1 
+   Var skip: char, 2, 1 
+   Var result: bool, 3, 1 
+
+Prog MJProgram: notype, 0, 1 
+   Var x: int, 0, 0 
+   Var y: Arr of int, 1, 0 
+   Var z: int, 2, 0 
+   Var q: bool, 3, 0 
+   Var w: Arr of bool, 4, 0 
+   Var e: bool, 5, 0 
+   Var o: char, 6, 0 
+   Var p: Arr of char, 7, 0 
+   Var obj: notype, 8, 0 
+   Con klkl_correct: int, 8, 0 
+   Con lklk_correct: int, 18, 0 
+   Con znak1_correct: char, 122, 0 
+   Con prpr_correct: bool, true, 0 
+   Con rprp_correct: bool, false, 0 
+   Meth main: notype, 0, 3 
+      Var local_int: int, 0, 1 
+      Var local_char: char, 1, 1 
+      Var local_bool: bool, 2, 1 
+
+   Meth getChar: notype, 0, 3 
+      Var g: int, 0, 1 
+      Var h: char, 1, 1 
+      Var b: bool, 2, 1 
+      Var k: int, 3, 1 
+      Var z: int, 4, 1 
+      Var po: Arr of int, 5, 1 
+      Var u: bool, 6, 1 
+      Var i: Arr of bool, 7, 1 
+      Var ch: Arr of char, 8, 1 
+
+
+
+ERROR 11:01:26,446 - Semanticka analiza NIJE uspesna!

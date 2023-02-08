@@ -1,0 +1,46 @@
+INFO  11:01:26,730 - Kompajliranje src fajla: C:\Users\Svetozar Divljakovic\eclipse-workspace\MJCompiler\src\..\test\syntax_error.mj
+INFO  11:01:26,765 - #21 program
+INFO  11:01:26,765 - #46 LexError
+INFO  11:01:26,765 - #46 int
+INFO  11:01:26,766 - #46 promenljiva
+INFO  11:01:26,767 - #24 ;
+INFO  11:01:26,767 - #46 bool
+INFO  11:01:26,767 - #46 temp
+INFO  11:01:26,767 - #36 ++
+ERROR 11:01:26,767 - 
+Sintaksna greska na liniji 3
+INFO  11:01:26,768 - #38 ,
+INFO  11:01:26,768 - #46 tmp
+INFO  11:01:26,768 - #38 ,
+INFO  11:01:26,768 - #46 tp
+DEBUG 11:01:26,768 - Izvrsen oporavak pri deklaraciji promenljive u liniji 3
+INFO  11:01:26,779 - #29 =
+ERROR 11:01:26,779 - 
+Sintaksna greska na liniji 3
+INFO  11:01:26,779 - #24 ;
+INFO  11:01:26,779 - #22 {
+INFO  11:01:26,779 - #41 void
+INFO  11:01:26,779 - #46 main
+DEBUG 11:01:26,780 - Izvrsen oporavak pri deklaraciji promenljive u liniji 3
+INFO  11:01:26,780 - #25 (
+INFO  11:01:26,781 - #26 )
+INFO  11:01:26,782 - #22 {
+INFO  11:01:26,782 - #46 promenljiva
+INFO  11:01:26,782 - #29 =
+INFO  11:01:26,782 - #46 promenljiva
+INFO  11:01:26,782 - #32 *
+INFO  11:01:26,783 - #32 *
+ERROR 11:01:26,783 - 
+Sintaksna greska na liniji 7
+INFO  11:01:26,783 - #32 *
+INFO  11:01:26,783 - #46 promenljiva
+INFO  11:01:26,783 - #24 ;
+INFO  11:01:26,783 - #40 print
+INFO  11:01:26,783 - #25 (
+INFO  11:01:26,783 - #43 5
+DEBUG 11:01:26,783 - Izvrsen oporavak od greske pri dodeli vrednosti do ; u liniji 7
+INFO  11:01:26,784 - #26 )
+INFO  11:01:26,784 - #24 ;
+INFO  11:01:26,784 - #23 }
+INFO  11:01:26,784 - #23 }
+ERROR 11:01:26,785 - Parsiranje NIJE izvrseno uspesno!

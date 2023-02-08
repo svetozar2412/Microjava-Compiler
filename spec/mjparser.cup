@@ -1,0 +1,243 @@
+
+
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+	boolean errorDetected = false;
+
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	errorDetected=true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+
+:}
+
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+terminal BREAK,CLASS,ELSE,IF,WHILE,RETURN,EXTENDS,CONTINUE,FOREACH,EQUAL,NOT_EQUAL;
+terminal GREATER_THAN,GREATER_THAN_OR_EQUAL,LESS_THAN,LESS_THAN_OR_EQUAL,AND,OR,COLON,LAMBDA;
+
+terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, LSQUARE, RSQUARE, ASSIGN, PLUS, MINUS, MUL, DIV, MOD, DEC, INC, NEW, COMMA, READ, PRINT, VOID, CONST;
+terminal Integer NUM_CONST;
+terminal Character CHAR_CONST;
+terminal String BOOL_CONST;
+terminal String IDENT;
+
+nonterminal DataDeclList, MethodDeclList, DataDecl, VarDecl, VarDeclType, ConstDecl, ConstDeclType, VarDeclList, ConstDeclList, SingleVarDecl, SingleConstDecl;
+nonterminal FormPars, StatementList, LocalVarDeclarationList, FormalParamList, FormalParamDecl, Statement, DesignatorAssignmentStatement, DesignatorStatement;
+nonterminal DesignatorList, OptionalDesignator, ArrayName, Addop, Mulop;
+nonterminal ExprAssignmentError;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, MethodDecl, MethodTypeName,Designator;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Factor, Expr;
+
+start with Program;
+
+Program ::= (Program) PROG ProgName:p DataDeclList LBRACE MethodDeclList RBRACE;
+
+ProgName ::= (ProgName) IDENT:progName;
+
+DataDeclList ::= (DataDeclarations) DataDeclList DataDecl
+			|
+			(NoDataDeclarations) /* epsilon */
+			;
+			
+DataDecl ::= (ConstDataDecl) ConstDecl
+			|
+			(VarDataDecl) VarDecl
+			;
+			
+ConstDecl ::= (ConstDeclarations) CONST ConstDeclType ConstDeclList SEMI;
+
+ConstDeclType ::= (ConstDeclType) Type:typeName;
+			
+VarDecl ::= (VarDeclarations) VarDeclType VarDeclList SEMI
+			|
+			(ErrorVarDeclarations) error:e SEMI {: parser.log.debug("Izvrsen oporavak pri deklaraciji promenljive u liniji " + eleft, null);  :}
+			;
+
+VarDeclType ::= (VarDeclType) Type:typeName;
+			
+VarDeclList ::= (MultipleVarDeclarations) SingleVarDecl COMMA VarDeclList
+			|
+			(SingleVarDeclaration) SingleVarDecl
+			;
+
+SingleVarDecl ::= (ScalarVarDeclaration) IDENT:varName
+			|
+			(ArrayVarDeclaration) IDENT:varName LSQUARE RSQUARE
+			|
+			(VarDeclarationError) error:e {: parser.log.debug("Izvrsen oporavak pri deklaraciji promenljive u liniji " + eleft, null);  :}
+			;
+			
+ConstDeclList ::= (MultipleConstDeclarations) ConstDeclList COMMA SingleConstDecl
+				|
+				(SingleConstDeclaration) SingleConstDecl
+				;
+
+SingleConstDecl ::= (NumConstDeclaration) IDENT:constName ASSIGN NUM_CONST:numValue
+			|
+			(CharConstDeclaration) IDENT:constName ASSIGN CHAR_CONST:charValue
+			|
+			(BoolConstDeclaration) IDENT:constName ASSIGN BOOL_CONST:boolValue
+			;
+
+Type ::= (Type) IDENT:typeName;
+
+MethodDeclList ::= (MethodDeclarations) MethodDeclList MethodDecl
+				|
+				(NoMethodDeclarations) /* epsilon */
+				;
+				
+MethodDecl ::= /* (NotVoidMethodDeclaration) Type:typeName IDENT:methodName LPAREN FormPars RPAREN LocalVarDeclarationList LBRACE StatementList RBRACE
+			|
+			(NotVoidMethodDeclarationWithoutLocals) Type:typeName IDENT:methodName LPAREN FormPars RPAREN LBRACE StatementList RBRACE
+			| */
+			(VoidMethodDeclaration) MethodTypeName LPAREN FormPars RPAREN LocalVarDeclarationList LBRACE StatementList RBRACE
+			|
+			(VoidMethodDeclarationWithoutLocals) MethodTypeName LPAREN FormPars RPAREN LBRACE StatementList RBRACE
+			;
+			
+MethodTypeName ::= (MethodTypeName) VOID IDENT:methodName;
+			
+LocalVarDeclarationList ::= (MultipleLocals) LocalVarDeclarationList VarDecl
+						|
+						(SingleLocal) VarDecl
+						;
+
+FormPars ::= (FormParams) FormalParamList
+		  |
+		  (NoFormParam) /* epsilon */
+		  ;
+		  
+FormalParamList ::= (FormalParamDecls) FormalParamList COMMA FormalParamDecl
+				|
+				(SingleFormalParamDecl) FormalParamDecl
+				;
+				
+FormalParamDecl ::= (ScalarFormalParamDecl) Type:typeName IDENT:varName
+				|
+				(ArrayFormalParamDecl) Type:typeName IDENT:varName LSQUARE RSQUARE
+				;
+
+StatementList ::= (Statements) StatementList Statement
+				|
+				(NoStatements) /* epsilon */
+				;
+				
+Statement ::= (DesignatorStmt) DesignatorStatement SEMI
+		   |
+		   (PrintStmt) PRINT LPAREN Expr RPAREN SEMI
+		   |
+		   (ExtendedPrintStmt) PRINT LPAREN Expr COMMA NUM_CONST:numValue RPAREN SEMI
+		   |
+		   (ReadStmt) READ LPAREN Designator RPAREN SEMI
+		   ;
+		   
+DesignatorStatement ::= (DesignatorAssignmentStmt) DesignatorAssignmentStatement
+		   |
+		   (DecDesignatorStmt) Designator DEC
+		   |
+		   (IncDesignatorStmt) Designator INC
+		   |
+		   (DesignatorAssignmentWithSquareBrackets) LSQUARE DesignatorList RSQUARE ASSIGN Designator
+		   ;
+		   
+DesignatorAssignmentStatement ::= (DesignatorAssignment) Designator ASSIGN Expr
+								|
+								(DesignatorAssignmentError) Designator ASSIGN:a ExprAssignmentError
+								;
+								
+ExprAssignmentError ::= (ExprAssignmentError) error:e	{: parser.log.debug("Izvrsen oporavak od greske pri dodeli vrednosti do ; u liniji " + eleft, null);  :};
+
+DesignatorList ::= (MultipleOptionalDesignators) DesignatorList COMMA OptionalDesignator
+				|
+				(SingleOptionalDesignator) OptionalDesignator
+				;
+				
+OptionalDesignator ::= (NotEmptyOptionalDesignator) Designator
+				|
+				(EmptyOptionalDesignator) /* epsilon */
+				;
+	 
+Expr ::= (MultipleTermExpr) Expr Addop Term
+			|
+			(SingleTermExpr) Term
+			|
+			(NegSingleTermExpr) MINUS Term
+			;
+
+Term ::= (MultipleFactorTerm) Term Mulop Factor
+		|
+		(SingleFactorTerm) Factor
+		;
+
+Factor ::= (NumConstFactor) NUM_CONST:numValue
+		|
+		(CharConstFactor) CHAR_CONST:charValue
+		|
+		(BoolConstFactor) BOOL_CONST:boolValue
+		|
+		(ExprFactor) LPAREN Expr RPAREN
+		|
+		(NewArrayFactor) NEW Type:typeName LSQUARE Expr RSQUARE
+		|
+		(DesignatorFactor) Designator
+		;
+				
+Designator ::= (ScalarDesignator) IDENT:varName
+			|
+			(ArrayDesignator) ArrayName LSQUARE Expr:expr RSQUARE
+			;
+			
+ArrayName ::= (ArrayName) IDENT:varName;
+
+Addop ::= (Add) PLUS
+		|
+		(Sub) MINUS
+		;
+
+Mulop ::= (Mul) MUL
+		|
+		(Div) DIV
+		|
+		(Mod) MOD
+		;
+		
+
+
+
+			
